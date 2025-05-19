@@ -65,6 +65,8 @@ header {
 
 .header-container {
     padding: var(--spacing-unit);
+    max-width: 1200px;
+    margin: 0 auto;;
 }
 
 .header-top {
@@ -79,13 +81,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25rem;
+    /* gap: 0.25rem; */
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.6;
 }
 
 .header-subtitle {
@@ -254,6 +256,9 @@ section:last-child {
     border: 1px solid var(--light-gray);
     transition: box-shadow 0.2s ease;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
