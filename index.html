@@ -11,34 +11,45 @@
 
 <body>
   <header>
-    <div class="header-container container">
-      <div class="text-size-controls">
-        <button class="text-btn" onclick="changeTextSize('decrease')">A-</button>
-        <button class="text-btn" onclick="changeTextSize('reset')">A</button>
-        <button class="text-btn" onclick="changeTextSize('increase')">A+</button>
+    <div class="header-container">
+      <div class="header-top">
+        <div class="header-brand">
+          <div class="logo">South Natomas Clubhouse</div>
+          <p data-lang="en">Community Resources for Seniors</p>
+          <p data-lang="es">Recursos Comunitarios para Adultos Mayores</p>
+        </div>
+        <div class="accessibility-controls">
+          <div class="text-size-controls">
+            <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">A-</button>
+            <button class="text-btn" onclick="changeTextSize('reset')" aria-label="Reset text size">A</button>
+            <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">A+</button>
+          </div>
+          <div class="language-selector">
+            <button class="language-btn" data-lang="es" onclick="selectLanguage('en')" aria-label="Switch to English">English</button>
+            <button class="language-btn" data-lang="en" onclick="selectLanguage('es')" aria-label="Switch to Spanish">Español</button>
+          </div>
+        </div>
       </div>
-  
-      <div class="language-selector">
-        <button class="language-btn" data-lang="es" onclick="selectLanguage('en')">English</button>
-        <button class="language-btn" data-lang="en" onclick="selectLanguage('es')">Español</button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="logo">South Natomas Clubhouse</div>
-      <p data-lang="en">Community Resources for Seniors</p>
-      <p data-lang="es">Recursos Comunitarios para Adultos Mayores</p>
     </div>
   </header>
 
   <nav>
+    <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span class="menu-icon"></span>
+      <span data-lang="en">Menu</span>
+      <span data-lang="es">Menú</span>
+    </button>
     <div class="nav-container">
-      <!-- <a href="#home" class="nav-item">Home</a> -->
-      <a href="#resources" class="nav-item">Resources</a>
-      <a href="#events" class="nav-item">Events</a>
-      <a href="#photos" class="nav-item">Photos</a>
-      <a href="#calendar" class="nav-item">Calendar</a>
-      <a href="#contact" class="nav-item">Contact Us</a>
+      <a href="#resources" class="nav-item" data-lang="en">Resources</a>
+      <a href="#resources" class="nav-item" data-lang="es">Recursos</a>
+      <a href="#events" class="nav-item" data-lang="en">Events</a>
+      <a href="#events" class="nav-item" data-lang="es">Eventos</a>
+      <a href="#photos" class="nav-item" data-lang="en">Photos</a>
+      <a href="#photos" class="nav-item" data-lang="es">Fotos</a>
+      <a href="#calendar" class="nav-item" data-lang="en">Calendar</a>
+      <a href="#calendar" class="nav-item" data-lang="es">Calendario</a>
+      <a href="#contact" class="nav-item" data-lang="en">Contact Us</a>
+      <a href="#contact" class="nav-item" data-lang="es">Contáctenos</a>
     </div>
   </nav>
 
