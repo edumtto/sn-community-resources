@@ -52,9 +52,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-unit);
+    
 }
 
 /* Header Styles */
@@ -189,22 +187,30 @@ nav {
 
 /* Main Content Styles */
 main {
-    padding: var(--spacing-unit) 0;
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 var(--spacing-unit);
 }
 
 section {
-    margin-bottom: 2rem;
-    padding: var(--spacing-unit);
-    background-color: white;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--light-gray);
+    margin: 2rem 0;
+    padding: 0.5rem 0 0 0;
+    position: relative;
+}
+
+section:first-child {
+    margin-top: 0.5rem;
+}
+
+section:last-child {
+    margin-bottom: 0;
 }
 
 .section-title {
     color: var(--primary-dark);
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--secondary);
@@ -475,7 +481,7 @@ footer {
     }
 
     .section-title {
-        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .resource-card, .event-card, .photo-album {
@@ -484,6 +490,21 @@ footer {
 
     .form-input, .form-textarea, .form-button {
         font-size: 16px; /* Prevent zoom on iOS */
+    }
+
+    main {
+        padding: 1rem 0;
+    }
+
+    section {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    section:not(:last-child)::after {
+        bottom: -1rem;
+        width: 40px;
+        height: 3px;
     }
 }
 
