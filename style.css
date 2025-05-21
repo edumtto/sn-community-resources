@@ -79,15 +79,18 @@ header {
 
 .header-brand {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* gap: 0.25rem; */
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
 }
 
-.logo {
+.header-title {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.6;
+}
+.logo {
+  height: 60px;
 }
 
 .header-subtitle {
