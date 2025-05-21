@@ -199,17 +199,17 @@ main {
 }
 
 section {
-    margin: 2rem 0;
+    margin: 4rem 0 0 0;
     padding: 0.5rem 0 0 0;
     position: relative;
 }
 
 section:first-child {
-    margin-top: 0.5rem;
+    margin-top: 3rem;
 }
 
 section:last-child {
-    margin-bottom: 0;
+    margin-bottom: 4rem;
 }
 
 .section-title {
@@ -566,5 +566,59 @@ footer {
     
     .resource-card, .event-card, .photo-album {
         border: 2px solid black;
+    }
+}
+
+/* Back to Home Container */
+.back-to-home-container {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--light);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    margin: 0 0.5rem;
+    white-space: nowrap;
+    min-width: 200px;
+}
+
+.back-button:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive adjustments for back buttons */
+@media (max-width: 768px) {
+    .back-to-home-container {
+        padding: 1.5rem 0;
+        min-width: 280px;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .back-button {
+        font-size: 1.1rem;
+        padding: 0.6rem 1.2rem;
+        margin: 0.25rem;
+        min-width: 180px;
     }
 }
