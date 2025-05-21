@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahjong - South Natomas Clubhouse</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="header-brand">
+                    <img class="logo" src="assets/logo1.png">
+                    <div>
+                        <div class="header-title">South Natomas Clubhouse</div>
+                        <p data-lang="en">Community Resources for Seniors</p>
+                        <p data-lang="es">Recursos Comunitarios para Adultos Mayores</p>
+                    </div>
+                </div>
+                <div class="accessibility-controls">
+                    <div class="text-size-controls">
+                        <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">A-</button>
+                        <button class="text-btn" onclick="changeTextSize('reset')" aria-label="Reset text size">A</button>
+                        <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">A+</button>
+                    </div>
+                    <div class="language-selector">
+                        <button class="language-btn" data-lang="es" onclick="selectLanguage('en')" aria-label="Switch to English">English</button>
+                        <button class="language-btn" data-lang="en" onclick="selectLanguage('es')" aria-label="Switch to Spanish">Español</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-item back-home" data-lang="en">← Back to Home</a>
+            <a href="index.html" class="nav-item back-home" data-lang="es">← Volver al Inicio</a>
+            <a href="index.html#resources" class="nav-item" data-lang="en">Resources</a>
+            <a href="index.html#resources" class="nav-item" data-lang="es">Recursos</a>
+            <a href="index.html#photos" class="nav-item" data-lang="en">Photos</a>
+            <a href="index.html#photos" class="nav-item" data-lang="es">Fotos</a>
+        </div>
+    </nav>
+
+    <main>
+
+      <section class="hero-section" style="background-image: url('assets/mahjong-hero.jpg');">
+        <div class="hero-content">
+            <h1 data-lang="en">Discover the World of Mahjong</h1>
+            <h1 data-lang="es">Descubre el Mundo del Mahjong</h1>
+            <p data-lang="en">Learn, Play, and Connect Through This Timeless Game</p>
+            <p data-lang="es">Aprende, Juega y Conéctate a Través de Este Juego Atemporal</p>
+        </div>
+    </section>
+
+        <section class="container">
+            <h2 class="section-title" data-lang="en">About Mahjong</h2>
+            <h2 class="section-title" data-lang="es">Acerca del Mahjong</h2>
+
+            <div class="resource-card" style="max-width: 800px; margin: 0 auto;">
+                <h3 class="resource-title" data-lang="en">What is Mahjong?</h3>
+                <h3 class="resource-title" data-lang="es">¿Qué es el Mahjong?</h3>
+                
+                <p class="resource-description" data-lang="en">
+                    Mahjong is a traditional Chinese tile game that combines elements of skill, strategy, and chance. 
+                    It's played with 144 tiles featuring Chinese characters and symbols. The game is popular worldwide 
+                    and is especially enjoyed by seniors as it helps maintain mental sharpness and provides social interaction.
+                </p>
+                <p class="resource-description" data-lang="es">
+                    El Mahjong es un juego tradicional chino de fichas que combina elementos de habilidad, estrategia y azar. 
+                    Se juega con 144 fichas que presentan caracteres y símbolos chinos. El juego es popular en todo el mundo 
+                    y es especialmente disfrutado por los adultos mayores, ya que ayuda a mantener la agudeza mental y 
+                    proporciona interacción social.
+                </p>
+
+                <h3 class="resource-title" style="margin-top: 2rem;" data-lang="en">Benefits of Playing Mahjong</h3>
+                <h3 class="resource-title" style="margin-top: 2rem;" data-lang="es">Beneficios de Jugar Mahjong</h3>
+                
+                <ul class="resource-description" style="list-style-type: none; padding-left: 0;">
+                    <li data-lang="en">• Improves memory and concentration</li>
+                    <li data-lang="es">• Mejora la memoria y la concentración</li>
+                    <li data-lang="en">• Enhances strategic thinking</li>
+                    <li data-lang="es">• Mejora el pensamiento estratégico</li>
+                    <li data-lang="en">• Promotes social interaction</li>
+                    <li data-lang="es">• Promueve la interacción social</li>
+                    <li data-lang="en">• Reduces stress and anxiety</li>
+                    <li data-lang="es">• Reduce el estrés y la ansiedad</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title" data-lang="en">Learning Resources</h2>
+            <h2 class="section-title" data-lang="es">Recursos de Aprendizaje</h2>
+
+            <div class="resources-container">
+                <div class="resource-card">
+                    <h3 class="resource-title">📚 Mahjong Picture Guide</h3>
+                    <p class="resource-description" data-lang="en">A comprehensive visual guide covering the basic rules, tile meanings, and scoring system. Perfect for beginners.</p>
+                    <p class="resource-description" data-lang="es">Una guía visual completa que cubre las reglas básicas, significados de las fichas y sistema de puntuación. Perfecta para principiantes.</p>
+                    <a href="https://www.mahjongpictureguide.com/" class="resource-link" data-lang="en">View Guide</a>
+                    <a href="https://www.mahjongpictureguide.com/" class="resource-link" data-lang="es">Ver Guía</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3 class="resource-title">🎥 Video Tutorials</h3>
+                    <p class="resource-description" data-lang="en">Step-by-step video tutorials showing how to play, from setting up the tiles to winning strategies.</p>
+                    <p class="resource-description" data-lang="es">Tutoriales en video paso a paso que muestran cómo jugar, desde la configuración de las fichas hasta estrategias ganadoras.</p>
+                    <a href="#" class="resource-link" data-lang="en">Watch Videos</a>
+                    <a href="#" class="resource-link" data-lang="es">Ver Videos</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3 class="resource-title">🎮 Practice Games</h3>
+                    <p class="resource-description" data-lang="en">Interactive online games to practice your skills and learn at your own pace.</p>
+                    <p class="resource-description" data-lang="es">Juegos interactivos en línea para practicar tus habilidades y aprender a tu propio ritmo.</p>
+                    <a href="#" class="resource-link" data-lang="en">Play Now</a>
+                    <a href="#" class="resource-link" data-lang="es">Jugar Ahora</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3 class="resource-title">📱 Mobile Apps</h3>
+                    <p class="resource-description" data-lang="en">Recommended mobile applications for learning and playing Mahjong on the go.</p>
+                    <p class="resource-description" data-lang="es">Aplicaciones móviles recomendadas para aprender y jugar Mahjong en cualquier lugar.</p>
+                    <a href="#" class="resource-link" data-lang="en">View Apps</a>
+                    <a href="#" class="resource-link" data-lang="es">Ver Aplicaciones</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="back-to-home-container">
+        <a href="index.html" class="back-button" data-lang="en">← Back to Home Page</a>
+        <a href="index.html" class="back-button" data-lang="es">← Volver a la Página Principal</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title" data-lang="en">Quick Links</h3>
+                    <h3 class="footer-title" data-lang="es">Enlaces Rápidos</h3>
+                    <div class="footer-links">
+                        <a href="index.html" data-lang="en">Home</a>
+                        <a href="index.html" data-lang="es">Inicio</a>
+                        <a href="index.html#resources" data-lang="en">Resources</a>
+                        <a href="index.html#resources" data-lang="es">Recursos</a>
+                        <a href="index.html#photos" data-lang="en">Photos</a>
+                        <a href="index.html#photos" data-lang="es">Fotos</a>
+                        <a href="contact.html" data-lang="en">Contact Us</a>
+                        <a href="contact.html" data-lang="es">Contáctenos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 South Natomas Clubhouse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html> 
