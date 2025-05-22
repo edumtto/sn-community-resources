@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai Chi Resources - South Natomas Clubhouse</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="tai-chi.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="header-brand">
+                    <img class="logo" src="assets/logo1.png">
+                    <div>
+                        <div class="header-title">South Natomas Clubhouse</div>
+                        <p data-lang="en">Community Resources for Seniors</p>
+                        <p data-lang="es">Recursos Comunitarios para Adultos Mayores</p>
+                    </div>
+                </div>
+                <div class="accessibility-controls">
+                    <div class="text-size-controls">
+                        <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">A-</button>
+                        <button class="text-btn" onclick="changeTextSize('reset')" aria-label="Reset text size">A</button>
+                        <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">A+</button>
+                    </div>
+                    <div class="language-selector">
+                        <button class="language-btn" data-lang="es" onclick="selectLanguage('en')" aria-label="Switch to English">English</button>
+                        <button class="language-btn" data-lang="en" onclick="selectLanguage('es')" aria-label="Switch to Spanish">Español</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-item back-home" data-lang="en">← Back to Home</a>
+            <a href="index.html" class="nav-item back-home" data-lang="es">← Volver al Inicio</a>
+            <a href="index.html#resources" class="nav-item" data-lang="en">Resources</a>
+            <a href="index.html#resources" class="nav-item" data-lang="es">Recursos</a>
+            <a href="index.html#photos" class="nav-item" data-lang="en">Photos</a>
+            <a href="index.html#photos" class="nav-item" data-lang="es">Fotos</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section" style="background-image: url('assets/tai-chi-hero.jpg');">
+            <div class="hero-content">
+                <h1>Tai Chi Resources</h1>
+                <p>Discover the ancient art of Tai Chi and its benefits for mind and body</p>
+            </div>
+        </section>
+
+        <section class="featured-video-section">
+            <div class="container">
+                <div class="featured-video-card">
+                    <div class="featured-video-image">
+                        <img src="assets/tai-chi-featured.jpg" alt="Tai Chi Practice">
+                    </div>
+                    <div class="featured-video-content">
+                        <h2>Tai Chi Guide</h2>
+                        <p>Tai Chi is an ancient Chinese martial art that combines slow, deliberate movements with deep breathing and meditation. It's often described as "meditation in motion" and is particularly beneficial for seniors due to its low-impact nature. Mr. Peter Pun has carefully compiled various materials and resources to create a comprehensive guide that covers the fundamental principles, basic movements, and health benefits of Tai Chi practice. This PDF guide is designed to help you start your Tai Chi journey at your own pace.</p>
+                        <a href="assets/tai-chi-class-2025.pdf" class="featured-video-button" target="_blank">Download Guide</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-categories">
+            <div class="container">
+                <div class="category-section">
+                    <h2 class="section-title">Additional Resources</h2>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="assets/placeholder-video.jpg" alt="Tai Chi Basics">
+                            </div>
+                            <div class="video-info">
+                                <h3>Basic Tai Chi Movements</h3>
+                                <p>Learn the fundamental movements and postures of Tai Chi with step-by-step instructions.</p>
+                                <a href="#" class="video-link">View Guide</a>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="assets/placeholder-video.jpg" alt="Tai Chi Meditation">
+                            </div>
+                            <div class="video-info">
+                                <h3>Meditation Techniques</h3>
+                                <p>Discover how to incorporate meditation into your Tai Chi practice for enhanced benefits.</p>
+                                <a href="#" class="video-link">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="assets/placeholder-video.jpg" alt="Tai Chi Benefits">
+                            </div>
+                            <div class="video-info">
+                                <h3>Health Benefits</h3>
+                                <p>Explore the numerous physical and mental health benefits of regular Tai Chi practice.</p>
+                                <a href="#" class="video-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2>Benefits of Tai Chi</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Balance & Stability</h3>
+                        <p>Improve your balance and reduce the risk of falls through gentle, controlled movements.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Stress Reduction</h3>
+                        <p>Find inner peace and reduce stress through mindful movement and breathing exercises.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Joint Health</h3>
+                        <p>Maintain joint flexibility and reduce stiffness with gentle, flowing movements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="back-to-home-container">
+        <a href="index.html" class="back-button" data-lang="en">← Back to Home Page</a>
+        <a href="index.html" class="back-button" data-lang="es">← Volver a la Página Principal</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title" data-lang="en">Quick Links</h3>
+                    <h3 class="footer-title" data-lang="es">Enlaces Rápidos</h3>
+                    <div class="footer-links">
+                        <a href="index.html" data-lang="en">Home</a>
+                        <a href="index.html" data-lang="es">Inicio</a>
+                        <a href="index.html#resources" data-lang="en">Resources</a>
+                        <a href="index.html#resources" data-lang="es">Recursos</a>
+                        <a href="index.html#photos" data-lang="en">Photos</a>
+                        <a href="index.html#photos" data-lang="es">Fotos</a>
+                        <a href="contact.html" data-lang="en">Contact Us</a>
+                        <a href="contact.html" data-lang="es">Contáctenos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 South Natomas Clubhouse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html> 
