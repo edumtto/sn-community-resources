@@ -11,6 +11,7 @@
     box-shadow: var(--shadow-md);
     overflow: hidden;
     margin: 2rem 0;
+    transition: transform 0.3s ease;
 }
 
 .featured-video-image {
@@ -94,7 +95,7 @@
     transition: transform 0.3s ease;
 }
 
-.video-card:hover {
+.video-card:hover, .featured-video-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
