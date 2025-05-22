@@ -634,6 +634,8 @@ footer {
     justify-content: center;
     position: relative;
     margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .hero-section::before {
