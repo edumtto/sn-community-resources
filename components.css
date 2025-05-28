@@ -199,8 +199,12 @@
 
 /* Benefits Section */
 .benefits-section {
-  padding: 3rem 0;
-  background-color: var(--light);
+  border-radius: var(--border-radius)
+}
+
+.benefits-section h2 {
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 .benefits-grid {
@@ -211,21 +215,39 @@
 }
 
 .benefit-card {
-  background-color: white;
-  padding: 1.5rem;
+  padding: 2.5rem;
   border-radius: var(--border-radius);
-  box-shadow: var(--shadow-md);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .benefit-card h3 {
   color: var(--primary-dark);
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.benefit-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--accent);
+  opacity: 0.7;
 }
 
 .benefit-card p {
   color: var(--dark);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-top: 1rem;
 }
 
 /* Back to Home Container */
