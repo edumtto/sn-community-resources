@@ -1,70 +1,3 @@
-/* Featured Video Section */
-.featured-video-section {
-    padding: 2rem 0;
-    background-color: var(--light);
-}
-
-.featured-video-card {
-    display: flex;
-    background-color: white;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-md);
-    overflow: hidden;
-    margin: 2rem 0;
-    transition: transform 0.3s ease;
-}
-
-.featured-video-image {
-    flex: 0 0 40%;
-    min-width: 300px;
-}
-
-.featured-video-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.featured-video-content {
-    flex: 1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.featured-video-content h2 {
-    color: var(--primary-dark);
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.featured-video-content p {
-    color: var(--dark);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-}
-
-.featured-video-button {
-    display: inline-block;
-    background-color: var(--primary);
-    color: white;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: var(--border-radius);
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow-md);
-    align-self: flex-start;
-}
-
-.featured-video-button:hover {
-    background-color: var(--primary-light);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}
-
 /* Video Categories Section */
 .video-categories {
     padding: 2rem 0;
@@ -95,7 +28,7 @@
     transition: transform 0.3s ease;
 }
 
-.video-card:hover, .featured-video-card:hover {
+.video-card:hover, .featured-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
@@ -205,28 +138,28 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .featured-video-card {
+    .featured-card {
         flex-direction: column;
     }
 
-    .featured-video-image {
+    .featured-image {
         flex: 0 0 200px;
         min-width: 100%;
     }
 
-    .featured-video-content {
+    .featured-content {
         padding: 1.5rem;
     }
 
-    .featured-video-content h2 {
+    .featured-content h2 {
         font-size: 1.5rem;
     }
 
-    .featured-video-content p {
+    .featured-content p {
         font-size: 1rem;
     }
 
-    .featured-video-button {
+    .featured-button {
         width: 100%;
         text-align: center;
     }
