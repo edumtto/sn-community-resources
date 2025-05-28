@@ -262,11 +262,14 @@ section:last-child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease;
 }
 
 
 .resource-card:hover, .event-card:hover, .photo-album:hover {
     box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
 }
 
 .resource-title, .event-title {
