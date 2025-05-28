@@ -46,7 +46,7 @@ setupLanguage();
 function setupLanguage() {
   // Check if the language is already stored in localStorage
   const storedLanguage = localStorage.getItem('selectedLanguage');
-  if (storedLanguage) { 
+  if (storedLanguage) {
     // If it is, set the language accordingly
     selectLanguage(storedLanguage);
   } else {
@@ -57,31 +57,31 @@ function setupLanguage() {
 // Language switching functionality
 function selectLanguage(lang) {
   console.log(`Language changed to: ${lang}`);
-    // Store the selected language in localStorage
-    localStorage.setItem('selectedLanguage', lang);
-    
-    // Update the language buttons
-    document.querySelectorAll('.language-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-lang') === lang) {
-            btn.classList.add('active');
-        }
-    });
-    
-    // Show/hide elements based on language
-    document.querySelectorAll('[data-lang]').forEach(element => {
-        if (element.getAttribute('data-lang') === lang) {
-            element.style.display = 'block';
-        } else {
-            element.style.display = 'none';
-        }
-    });
+  // Store the selected language in localStorage
+  localStorage.setItem('selectedLanguage', lang);
+
+  // Update the language buttons
+  document.querySelectorAll('.language-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
+    }
+  });
+
+  // Show/hide elements based on language
+  document.querySelectorAll('[data-lang]').forEach(element => {
+    if (element.getAttribute('data-lang') === lang) {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+  });
 }
 
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    selectLanguage(savedLanguage);
+  const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+  selectLanguage(savedLanguage);
 });
 
 // Smooth scrolling for anchor links
@@ -97,20 +97,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navContainer = document.querySelector('.nav-container');
-    
-    mobileMenuBtn.addEventListener('click', () => {
-        const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-        mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
-        navContainer.classList.toggle('active');
-    });
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const navContainer = document.querySelector('.nav-container');
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!navContainer.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-            mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            navContainer.classList.remove('active');
-        }
-    });
+  mobileMenuBtn.addEventListener('click', () => {
+    const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+    mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+    navContainer.classList.toggle('active');
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navContainer.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      navContainer.classList.remove('active');
+    }
+  });
 });
