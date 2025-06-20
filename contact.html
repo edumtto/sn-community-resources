@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - South Natomas Gold</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="components.css">
   <script src="script.js" async></script>
 </head>
 
@@ -23,15 +24,19 @@
         </div>
         <div class="accessibility-controls">
           <div class="text-size-controls">
-            <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">A-</button>
-            <button class="text-btn" onclick="changeTextSize('reset')" aria-label="Reset text size">A</button>
-            <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">A+</button>
+            <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">
+              <img src="assets/zoom-out.png" />
+            </button>
+            <!-- <button class="text-btn" onclick="changeTextSize('reset')" aria-label="Reset text size">A</button> -->
+            <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">
+              <img src="assets/zoom-in.png" />
+            </button>
           </div>
           <div class="language-selector">
             <button class="language-btn" data-lang="es" onclick="selectLanguage('en')"
-              aria-label="Switch to English">English</button>
+              aria-label="Switch to English"><img src="assets/language.png"/> English</button>
             <button class="language-btn" data-lang="en" onclick="selectLanguage('es')"
-              aria-label="Switch to Spanish">Español</button>
+              aria-label="Switch to Spanish"><img src="assets/language.png"/> Español</button>
           </div>
         </div>
       </div>
