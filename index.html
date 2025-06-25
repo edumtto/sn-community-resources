@@ -16,7 +16,7 @@
       <div class="header-top">
         <div class="header-brand">
           <img class="logo" src="assets/logo1.png">
-          <div>
+          <div class="header-text">
             <div class="header-title">South Natomas Gold</div>
             <p class="header-subtitle" data-lang="en">Community Resources for Seniors</p>
             <p class="header-subtitle" data-lang="es">Recursos Comunitarios para Adultos Mayores</p>
@@ -34,9 +34,20 @@
           </div>
           <div class="language-selector">
             <button class="language-btn" data-lang="es" onclick="selectLanguage('en')"
-              aria-label="Switch to English"><img src="assets/language.png"/> English</button>
+              aria-label="Switch to English">
+              <div class="language-btn-content">
+                <img src="assets/language.png"/> 
+                <p>EN</p>
+              </div>
+              
+            </button>
             <button class="language-btn" data-lang="en" onclick="selectLanguage('es')"
-              aria-label="Switch to Spanish"><img src="assets/language.png"/> Español</button>
+              aria-label="Switch to Spanish">
+              <div class="language-btn-content">
+                <img src="assets/language.png"/> 
+                <p>ES</p>
+              </div>
+            </button>
           </div>
         </div>
       </div>

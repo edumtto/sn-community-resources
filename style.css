@@ -136,7 +136,7 @@ header {
   border-radius: var(--border-radius);
   cursor: pointer;
   min-width: 2rem;
-  min-height: 2rem;
+  min-height: 40px;
   font-size: 1.2rem;
   transition: background-color 0.2s;
 }
@@ -156,14 +156,20 @@ header {
   padding: 0.5rem 0.5rem;
   border-radius: var(--border-radius);
   cursor: pointer;
-  min-height: 2rem;
-  font-size: 1.1rem;
+  min-height: 40px;
+  font-size: 1rem;
   transition: background-color 0.2s;
+}
+
+.language-btn-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .language-btn img {
   height: 1rem;
-  /* margin-right: 0.5rem; */
 }
 
 .language-btn:hover,
@@ -228,10 +234,6 @@ section {
   margin: 3rem 0 0 0;
   padding: 0.5rem 0 0 0;
   position: relative;
-}
-
-section:first-child {
-  margin-top: 2rem;
 }
 
 section:last-child {
@@ -500,47 +502,39 @@ footer {
     --spacing-unit: 0.75rem;
   }
 
+  .header-top {
+    justify-content: center;
+  }
+
+  .header-container {
+    padding: 0px 16px 0px 16px;
+  }
+
   .header-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .logo {
     width: 50px;
   }
 
-  .header-top {
-    flex-direction: column;
-    align-items: stretch;
+  .language-btn {
+    min-height: 32px;
+    font-size: 0.8rem;
   }
 
-  .header-brand {
-    /* align-items: center; */
-    /* text-align: center; */
-    margin-bottom: 0.5rem;
-  }
-
-  .accessibility-controls {
-    justify-content: center;
-    flex-direction: row;
+  .text-btn {
+    min-height: 32px;
+    padding: 0.3rem;
   }
 
   .mobile-menu-btn {
     display: block;
   }
 
-  /* .nav-container {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between
-  }
-
-  .nav-container.active {
-    display: flex;
-  } */
-
   .nav-item {
     min-height: 2rem;
-    padding: 0.6rem 1rem;
+    padding: 0.4rem 1rem;
   }
 
   .section-title {
