@@ -284,6 +284,8 @@ section:last-child {
 .resource-card,
 .event-card,
 .photo-album {
+  max-width: 600px;
+  margin: 0 auto;
   background-color: white;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
@@ -552,10 +554,6 @@ footer {
   .form-button {
     font-size: 16px;
     /* Prevent zoom on iOS */
-  }
-
-  main {
-    padding: 0;
   }
 
   section {
