@@ -56,7 +56,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -75,7 +75,7 @@ body {
 header {
   background-color: var(--primary);
   color: white;
-  padding: var(--spacing-unit) 0;
+  padding: 0;
   box-shadow: var(--shadow-md);
 }
 
@@ -103,17 +103,12 @@ header {
 
 .header-title {
   font-size: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 1.6;
 }
 
 .logo {
-  max-width: 100px;
-}
-
-.header-subtitle {
-  font-size: 1.1rem;
-  opacity: 0.9;
+  max-height: 38px;
 }
 
 .accessibility-controls {
@@ -204,20 +199,20 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 
 .nav-item {
   color: white;
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: var(--border-radius);
-  font-size: 1.1rem;
-  min-height: 3rem;
+  font-size: 1rem;
+  min-height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
 }
 
 .nav-item:hover {
@@ -510,10 +505,6 @@ footer {
 
   .header-container {
     padding: 0px 16px 0px 16px;
-  }
-
-  .header-subtitle {
-    font-size: 0.9rem;
   }
 
   .logo {
