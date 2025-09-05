@@ -1,0 +1,75 @@
+---
+title: "Mahjong"
+layout: "base.html"
+---
+
+<section class="hero-section" style="background-image: url('/images/mahjong-hero.jpg');">
+  <div class="hero-content">
+    <h1 data-lang="en">Discover the World of Mahjong</h1>
+    <h1 data-lang="es">Descubre el Mundo del Mahjong</h1>
+    <p data-lang="en">Learn, Play, and Connect Through This Timeless Game</p>
+    <p data-lang="es">Aprende, Juega y Conéctate a Través de Este Juego Atemporal</p>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title" data-lang="en">About Mahjong</h2>
+  <h2 class="section-title" data-lang="es">Acerca del Mahjong</h2>
+
+  <div class="resource-card" style="max-width: 800px; margin: 0 auto;">
+    <h3 class="resource-title" data-lang="en">What is Mahjong?</h3>
+    <h3 class="resource-title" data-lang="es">¿Qué es el Mahjong?</h3>
+
+    <p class="resource-description" data-lang="en">
+      Mahjong is a traditional Chinese tile game that combines elements of skill, strategy, and chance.
+      It's played with 144 tiles featuring Chinese characters and symbols. The game is popular worldwide
+      and is especially enjoyed by seniors as it helps maintain mental sharpness and provides social interaction.
+    </p>
+    <p class="resource-description" data-lang="es">
+      El Mahjong es un juego tradicional chino de fichas que combina elementos de habilidad, estrategia y azar.
+      Se juega con 144 fichas que presentan caracteres y símbolos chinos. El juego es popular en todo el mundo
+      y es especialmente disfrutado por los adultos mayores, ya que ayuda a mantener la agudeza mental y
+      proporciona interacción social.
+    </p>
+
+    <h3 class="resource-title" style="margin-top: 2rem;" data-lang="en">Benefits of Playing Mahjong</h3>
+    <h3 class="resource-title" style="margin-top: 2rem;" data-lang="es">Beneficios de Jugar Mahjong</h3>
+
+    <ul class="resource-description" style="list-style-type: none; padding-left: 0;">
+      <li data-lang="en">• Improves memory and concentration</li>
+      <li data-lang="es">• Mejora la memoria y la concentración</li>
+      <li data-lang="en">• Enhances strategic thinking</li>
+      <li data-lang="es">• Mejora el pensamiento estratégico</li>
+      <li data-lang="en">• Promotes social interaction</li>
+      <li data-lang="es">• Promueve la interacción social</li>
+      <li data-lang="en">• Reduces stress and anxiety</li>
+      <li data-lang="es">• Reduce el estrés y la ansiedad</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title" data-lang="en">Learning Resources</h2>
+  <h2 class="section-title" data-lang="es">Recursos de Aprendizaje</h2>
+
+  <div class="resources-container">
+    <div class="resource-card">
+      <h3 class="resource-title">📚 Mahjong Picture Guide</h3>
+      <p class="resource-description" data-lang="en">A comprehensive visual guide covering the basic rules, tile
+        meanings, and scoring system. Perfect for beginners.</p>
+      <p class="resource-description" data-lang="es">Una guía visual completa que cubre las reglas básicas,
+        significados de las fichas y sistema de puntuación. Perfecta para principiantes.</p>
+      <a href="https://www.mahjongpictureguide.com/" class="resource-link" data-lang="en">View Guide</a>
+      <a href="https://www.mahjongpictureguide.com/" class="resource-link" data-lang="es">Ver Guía</a>
+    </div>
+    <div class="resource-card">
+      <h3 class="resource-title">📄 SNCC Mahjong Tournament Rules</h3>
+      <p class="resource-description" data-lang="en">The rules of the last South Natomas Community Center Mahjong
+        Tournament at 3/28/2025.</p>
+      <p class="resource-description" data-lang="es">Las reglas del último torneo de Mahjong del South Natomas
+        Community Center el 28/03/2025.</p>
+      <a href="/images/mahjong-tournament-rules.pdf" class="resource-link" data-lang="en">View Rules</a>
+      <a href="/images/mahjong-tournament-rules.pdf" class="resource-link" data-lang="es">Ver Reglas</a>
+    </div>
+  </div>
+</section>
