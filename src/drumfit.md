@@ -72,9 +72,9 @@ layout: "base.html"
             <p data-lang="es">Aprende divertidos patrones de percusión mientras te ejercitas con éxitos clásicos y
               coreografía.</p>
             <a href="https://youtube.com/playlist?list=PLPUm7wbr1JOpdWYj4gM7WVErm4NmZ8V0_&si=jNU1ijGpDL7wxeNi"
-              class="video-link" target="_blank" data-lang="en">Watch Video</a>
+              class="video-link" target="_blank" data-lang="en">Watch Videos</a>
             <a href="https://youtube.com/playlist?list=PLPUm7wbr1JOpdWYj4gM7WVErm4NmZ8V0_&si=jNU1ijGpDL7wxeNi"
-              class="video-link" target="_blank" data-lang="es">Ver Video</a>
+              class="video-link" target="_blank" data-lang="es">Ver Videos</a>
           </div>
         </div>
         <div class="video-card">
@@ -89,9 +89,9 @@ layout: "base.html"
             <p data-lang="es">Disfruta de los beneficios de la percusión cardio dance con el divertido y energético
               Paul Eugene.</p>
             <a href="https://youtube.com/playlist?list=PLPUm7wbr1JOoopgpzVWn4WW8GWylo-p2G&si=gMwzFdI_8soYl28I"
-              class="video-link" target="_blank" data-lang="en">Watch Video</a>
+              class="video-link" target="_blank" data-lang="en">Watch Videos</a>
             <a href="https://youtube.com/playlist?list=PLPUm7wbr1JOoopgpzVWn4WW8GWylo-p2G&si=gMwzFdI_8soYl28I"
-              class="video-link" target="_blank" data-lang="es">Ver Video</a>
+              class="video-link" target="_blank" data-lang="es">Ver Videos</a>
           </div>
         </div>
       </div>
