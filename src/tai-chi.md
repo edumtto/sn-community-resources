@@ -34,8 +34,8 @@ layout: "base.html"
           y beneficios para la salud de la práctica del Tai Chi. Esta guía en PDF está diseñada para ayudarte a comenzar
           tu viaje de Tai Chi a tu propio ritmo.
         </p>
-        <a href="/images/tai-chi-class-2025.pdf" class="featured-button" target="_blank" data-lang="en">Download Guide</a>
-        <a href="/images/tai-chi-class-2025.pdf" class="featured-button" target="_blank" data-lang="es">Descargar Guía (en inglés)</a>
+        <a href="/documents/tai-chi-class-2025.pdf" class="featured-button" target="_blank" data-lang="en">Download Guide</a>
+        <a href="/documents/tai-chi-class-2025.pdf" class="featured-button" target="_blank" data-lang="es">Descargar Guía (en inglés)</a>
       </div>
     </div>
   </div>

@@ -68,8 +68,8 @@ layout: "base.html"
         Tournament at 3/28/2025.</p>
       <p class="resource-description" data-lang="es">Las reglas del último torneo de Mahjong del South Natomas
         Community Center el 28/03/2025.</p>
-      <a href="/images/mahjong-tournament-rules.pdf" class="resource-link" data-lang="en">View Rules</a>
-      <a href="/images/mahjong-tournament-rules.pdf" class="resource-link" data-lang="es">Ver Reglas</a>
+      <a href="/documents/mahjong-tournament-rules.pdf" class="resource-link" data-lang="en">View Rules</a>
+      <a href="/documents/mahjong-tournament-rules.pdf" class="resource-link" data-lang="es">Ver Reglas</a>
     </div>
   </div>
 </section>
