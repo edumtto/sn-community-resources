@@ -2,14 +2,10 @@
 title: "Welcome"
 layout: "base.html"
 ---
-<div class="hero-section">
+<div class="hero-section" style="background: #2B6CB0">
   <div class="hero-content">
-    <h1 class="hero-title">Welcome to South Natomas Gold</h1>
-    <p class="hero-subtitle">Your gateway to vibrant senior living, community resources, and meaningful connections for adults 50+</p>
-    <div class="hero-actions">
-      <a href="#resources" class="hero-btn primary">Explore Resources</a>
-      <a href="#photos" class="hero-btn secondary">View Photos</a>
-    </div>
+    <h1>Welcome to South Natomas Gold</h1>
+    <p>Your gateway to vibrant senior living, community resources, and meaningful connections for adults 50+</p>
   </div>
 </div>
 
@@ -26,8 +22,8 @@ layout: "base.html"
       </p>
       <p class="resource-description" data-lang="es">Descubra los beneficios del Tai Chi y aprenda cómo practicarlo.
       </p>
-      <a href="tai-chi.html" class="resource-link" data-lang="en">Access Resources</a>
-      <a href="tai-chi.html" class="resource-link" data-lang="es">Acceder a Recursos</a>
+      <a href="tai-chi/index.html" class="resource-link" data-lang="en">Access Resources</a>
+      <a href="tai-chi/index.html" class="resource-link" data-lang="es">Acceder a Recursos</a>
     </div>
     <!-- Drumfit Resources -->
     <div class="resource-card" data-category="exercise videos">

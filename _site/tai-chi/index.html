@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Natomas Gold - Tai-Chi</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/components.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="/js/script.js" async></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-top">
+        <div class="header-brand">
+          <img class="logo" src="/images/logo.png">
+        </div>
+        <div class="accessibility-controls">
+          <div class="text-size-controls">
+            <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">
+              <img src="/images/zoom-out.png" />
+            </button>
+            <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">
+              <img src="/images/zoom-in.png" />
+            </button>
+          </div>
+          <div class="language-selector">
+            <button class="language-btn" data-lang="es" onclick="selectLanguage('en')"
+              aria-label="Switch to English">
+              <div class="language-btn-content">
+                <img src="/images/language.png"/> 
+                <span>EN</span>
+              </div>
+              
+            </button>
+            <button class="language-btn" data-lang="en" onclick="selectLanguage('es')"
+              aria-label="Switch to Spanish">
+              <div class="language-btn-content">
+                <img src="/images/language.png"/> 
+                <span>ES</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/index.html" class="nav-item">Home</a>
+      <a href="/index.html#resources" class="nav-item" data-lang="en">Resources</a>
+      <a href="/index.html#resources" class="nav-item" data-lang="es">Recursos</a>
+      <a href="/index.html#photos" class="nav-item" data-lang="en">Photos</a>
+      <a href="/index.html#photos" class="nav-item" data-lang="es">Fotos</a>
+      <!-- <a href="#events" class="nav-item" data-lang="en">Events</a>
+      <a href="#events" class="nav-item" data-lang="es">Eventos</a> -->
+      <!-- <a href="#about" class="nav-item" data-lang="en">About</a>
+      <a href="#about" class="nav-item" data-lang="es">Sobre</a> -->
+    </div>
+  </nav>
+
+  <main>
+   <section class="hero-section" style="background-image: url('/images/tai-chi-hero.jpg');">
+  <div class="hero-content">
+    <h1 data-lang="en">Tai Chi Resources</h1>
+    <h1 data-lang="es">Recursos de Tai Chi</h1>
+    <p data-lang="en">Discover the ancient art of Tai Chi and its benefits for mind and body</p>
+    <p data-lang="es">Descubre el antiguo arte del Tai Chi y sus beneficios para la mente y el cuerpo</p>
+  </div>
+</section>
+<section class="featured-section">
+  <div class="container">
+    <div class="featured-card">
+      <a href="/images/tai-chi-class-2025.pdf" class="featured-image">
+        <img src="/images/tai-chi-featured.jpg" alt="Tai Chi Practice">
+      </a>
+      <div class="featured-content">
+        <h2 data-lang="en">Tai Chi Guide</h2>
+        <h2 data-lang="es">Guía de Tai Chi</h2>
+        <p data-lang="en">Tai Chi is an ancient Chinese martial art that combines slow, deliberate movements with deep breathing
+          and meditation. It's often described as "meditation in motion" and is particularly beneficial for seniors
+          due to its low-impact nature. Mr. Peter Pun has carefully compiled various materials and resources to
+          create a comprehensive guide that covers the fundamental principles, basic movements, and health benefits
+          of Tai Chi practice. This PDF guide is designed to help you start your Tai Chi journey at your own pace.
+        </p>
+        <p data-lang="es">El Tai Chi es un antiguo arte marcial chino que combina movimientos lentos y deliberados con respiración
+          profunda y meditación. A menudo se describe como "meditación en movimiento" y es particularmente beneficioso para
+          adultos mayores debido a su naturaleza de bajo impacto. El Sr. Peter Pun ha compilado cuidadosamente varios
+          materiales y recursos para crear una guía completa que cubre los principios fundamentales, movimientos básicos
+          y beneficios para la salud de la práctica del Tai Chi. Esta guía en PDF está diseñada para ayudarte a comenzar
+          tu viaje de Tai Chi a tu propio ritmo.
+        </p>
+        <a href="/images/tai-chi-class-2025.pdf" class="featured-button" target="_blank" data-lang="en">Download Guide</a>
+        <a href="/images/tai-chi-class-2025.pdf" class="featured-button" target="_blank" data-lang="es">Descargar Guía (en inglés)</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <h2 class="section-title" data-lang="en">Learning Resources</h2>
+  <h2 class="section-title" data-lang="es">Recursos de Aprendizaje</h2>
+  <div class="resources-container">
+    <div class="resource-card">
+      <h3 class="resource-title">🎥 Video Tutorials</h3>
+      <p class="resource-description" data-lang="en">Videos showing full routine demonstrations of Tai Chi movements. 
+        Most of the videos are in Mandarin, but we are working on translating them to English.</p>
+      <p class="resource-description" data-lang="es">Videos que muestran demostraciones de rutinas completas de movimientos de Tai Chi. 
+        La mayoría de los videos están en mandarín, pero estamos trabajando en traducirlos al inglés.</p>
+      <a href="https://1drv.ms/f/c/761a623eacccf9aa/EpW8NZwkRvpJnWWTbduSmwwBY_6U4XI2eOvU4f_caZ5amQ?e=7uYMMY/" class="resource-link" data-lang="en">View Videos</a>
+      <a href="https://1drv.ms/f/c/761a623eacccf9aa/EpW8NZwkRvpJnWWTbduSmwwBY_6U4XI2eOvU4f_caZ5amQ?e=7uYMMY/" class="resource-link" data-lang="es">Ver Vídeos</a>
+    </div>
+    </div>
+  </div>
+</section>
+</main>
+<section class="benefits-section container">
+  <h2 data-lang="en">Benefits of Tai Chi:</h2>
+  <h2 data-lang="es">Beneficios del Tai Chi:</h2>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <h3 data-lang="en">Balance & Stability</h3>
+      <h3 data-lang="es">Equilibrio y Estabilidad</h3>
+      <p data-lang="en">Improve your balance and reduce the risk of falls through gentle, controlled movements.</p>
+      <p data-lang="es">Mejora tu equilibrio y reduce el riesgo de caídas a través de movimientos suaves y controlados.</p>
+    </div>
+    <div class="benefit-card">
+      <h3 data-lang="en">Stress Reduction</h3>
+      <h3 data-lang="es">Reducción del Estrés</h3>
+      <p data-lang="en">Find inner peace and reduce stress through mindful movement and breathing exercises.</p>
+      <p data-lang="es">Encuentra paz interior y reduce el estrés a través de movimientos conscientes y ejercicios de respiración.</p>
+    </div>
+    <div class="benefit-card">
+      <h3 data-lang="en">Joint Health</h3>
+      <h3 data-lang="es">Salud Articular</h3>
+      <p data-lang="en">Maintain joint flexibility and reduce stiffness with gentle, flowing movements.</p>
+      <p data-lang="es">Mantén la flexibilidad articular y reduce la rigidez con movimientos suaves y fluidos.</p>
+    </div>
+  </div>
+</section>
+</main>
+<div class="back-to-home-container">
+  <a href="/index.html" class="back-button" data-lang="en">← Back to Home Page</a>
+  <a href="/index.html" class="back-button" data-lang="es">← Volver a la Página Principal</a>
+</div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        <p>&copy; 2025 South Natomas Gold. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
