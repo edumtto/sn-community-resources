@@ -82,6 +82,13 @@ layout: "base.html"
   <h2 class="section-title" data-lang="es">Álbumes de Fotos</h2>
 
   <div class="photos-container">
+  <div class="photo-album">
+      <a href="https://photos.app.goo.gl/FKhS92nHfeCQYkCg8">
+        <img src="images/senior_summer_showcase.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Senior Summer Showcase</h3>
+        <h3 class="album-title" data-lang="es">Senior Summer Showcase</h3>
+      </a>
+    </div>
     <div class="photo-album">
       <a href="https://photos.app.goo.gl/eUALnD3CitG4PpJa9">
         <img src="images/garden-setup-2025.jpg" alt="Album image" class="album-image">
