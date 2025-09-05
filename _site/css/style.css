@@ -245,6 +245,102 @@ section:last-child {
   border-bottom: 2px solid var(--secondary);
 }
 
+/* Hero Section Styles */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin: 0 calc(-1 * var(--spacing-unit));
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(255,255,255,0.1) 0%, 
+    transparent 25%, 
+    transparent 75%, 
+    rgba(255,255,255,0.1) 100%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  line-height: 1.5;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  min-height: 3.5rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+  border: 2px solid transparent;
+}
+
+.hero-btn.primary {
+  background-color: var(--accent);
+  color: white;
+}
+
+.hero-btn.primary:hover {
+  background-color: var(--accent-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-btn.secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.hero-btn.secondary:hover {
+  background-color: white;
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
 /* Resource Categories */
 .resource-categories {
   display: flex;
@@ -486,6 +582,33 @@ footer {
 
   .section-title {
     margin-bottom: 1.5rem;
+  }
+
+  /* Mobile Hero Styles */
+  .hero-section {
+    padding: 3rem 1rem;
+    margin: 0 calc(-1 * var(--spacing-unit));
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 1rem 1.5rem;
   }
 
   .resource-card,

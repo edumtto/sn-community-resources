@@ -2,6 +2,16 @@
 title: "Welcome"
 layout: "base.html"
 ---
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">Welcome to South Natomas Gold</h1>
+    <p class="hero-subtitle">Your gateway to vibrant senior living, community resources, and meaningful connections for adults 50+</p>
+    <div class="hero-actions">
+      <a href="#resources" class="hero-btn primary">Explore Resources</a>
+      <a href="#photos" class="hero-btn secondary">View Photos</a>
+    </div>
+  </div>
+</div>
 
 <section id="resources" class="container">
   <h2 class="section-title" data-lang="en">Resources</h2>
@@ -54,27 +64,7 @@ layout: "base.html"
         </p>
       </div>
     </div>
-
-    <div class="event-card">
-      <img src="/api/placeholder/300/180" alt="Arts & Crafts Workshop" class="event-image">
-      <div class="event-details">
-        <h3 class="event-title">Arts & Crafts Workshop</h3>
-        <p class="event-date">May 25, 2025</p>
-        <p class="event-description">Learn new craft techniques and create beautiful handmade items.</p>
-      </div>
-    </div>
-
-    <div class="event-card">
-      <img src="/api/placeholder/300/180" alt="Health & Wellness Seminar" class="event-image">
-      <div class="event-details">
-        <h3 class="event-title">Health & Wellness Seminar</h3>
-        <p class="event-date">June 2, 2025</p>
-        <p class="event-description">Expert speakers discuss senior health topics and answer your questions.</p>
-      </div>
-    </div>
   </div>
-
-  <a href="#" class="view-all-btn">View All Events</a>
 </section> -->
 
 <section id="photos" class="container">
