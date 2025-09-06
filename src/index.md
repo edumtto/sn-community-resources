@@ -23,8 +23,8 @@ layout: "base.html"
       </p>
       <p class="resource-description" data-lang="es">Descubra los beneficios del Tai Chi y aprenda cómo practicarlo.
       </p>
-      <a href="/tai-chi/index.html" class="resource-link" data-lang="en">Access Resources</a>
-      <a href="/tai-chi/index.html" class="resource-link" data-lang="es">Acceder a Recursos</a>
+      <a href="/tai-chi/index.html" class="resource-link" data-lang="en">View Resources</a>
+      <a href="/tai-chi/index.html" class="resource-link" data-lang="es">Ver Recursos</a>
     </div>
     <!-- Drumfit Resources -->
     <div class="resource-card" data-category="exercise videos">
