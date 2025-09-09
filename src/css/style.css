@@ -108,9 +108,20 @@ header {
   letter-spacing: 0.01rem;
 }
 
+.logo-compact {
+  display: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--highlight);
+  line-height: normal;
+}
+
 strong {
+  font-weight: 500;
   color: var(--highlight-dark);
-  font-weight: bold;
+  background: linear-gradient(120deg,var(--highlight-dark) 1.1rem, var(--highlight) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .accessibility-controls {
@@ -126,8 +137,8 @@ strong {
 }
 
 .text-btn {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: var(--border-radius);
@@ -147,8 +158,8 @@ strong {
 }
 
 .language-btn {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: var(--border-radius);
@@ -171,7 +182,7 @@ strong {
 
 .language-btn:hover,
 .text-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Navigation Styles */
@@ -200,7 +211,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.3rem;
+  gap: 0.4rem;
   /* padding: 0.3rem; */
 }
 
@@ -470,15 +481,14 @@ footer {
   .header-top {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-  }
-
-  .header-logo-and-navigation {
-    flex-direction: column;
-    gap: var(--spacing-unit);
+    /* justify-content: left; */
   }
 
   .accessibility-controls {
+    /* display: none; */
+  }
+
+  .text-size-controls {
     display: none;
   }
 
@@ -493,11 +503,6 @@ footer {
 
   .mobile-menu-btn {
     display: block;
-  }
-
-  .nav-item {
-    min-height: 2rem;
-    padding: 0.4rem 1rem;
   }
 
   .section-title {
