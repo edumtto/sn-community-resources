@@ -3,12 +3,13 @@ title: "Welcome"
 layout: "base.html"
 ---
 
-<div class="hero-section" style="background: linear-gradient(0deg, #2B6CB0 0%, #2C6CA4FF 50%, #1F477BFF 100%)">
+
+<section class="hero-section" style="background: linear-gradient(0deg, #2B6CB0 0%, #2C6CA4FF 50%, #1F477BFF 100%)">
   <div class="hero-content">
     <h1>Welcome to South Natomas Gold</h1>
     <p>Your gateway to vibrant senior living, community resources, and meaningful connections for adults 50+</p>
   </div>
-</div>
+</section>
 
 <section id="resources" class="container">
   <h2 class="section-title" data-lang="en">Resources</h2>

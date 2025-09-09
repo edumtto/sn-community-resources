@@ -45,7 +45,7 @@
 
 /* Featured Section */
 .featured-section {
-  padding: 2rem 0;
+  padding-top: 2rem;
   background-color: var(--light);
 }
 
@@ -56,7 +56,7 @@
   box-shadow: var(--shadow-md);
   border: 2px solid var(--light-gray);
   overflow: hidden;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   transition: transform 0.3s ease;
 }
 
@@ -113,7 +113,7 @@
 
 /* Video Categories Section */
 .video-categories {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 .category-section {
