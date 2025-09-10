@@ -8,11 +8,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   overflow: hidden;
 }
 
-.hero-section::before {
+.darkened::before {
   content: '';
   position: absolute;
   top: 0;
@@ -56,7 +56,7 @@
   box-shadow: var(--shadow-md);
   border: 2px solid var(--light-gray);
   overflow: hidden;
-  /* margin: 2rem 0; */
+  margin: 0 1rem;
   transition: transform 0.3s ease;
 }
 
@@ -131,6 +131,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .video-card {
@@ -287,6 +288,10 @@
   background-color: var(--primary-light);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
+}
+
+.text-container {
+  padding: 0 1rem;
 }
 
 /* Responsive Design */

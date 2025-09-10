@@ -49,22 +49,6 @@ layout: "base.html"
   </div>
 </section>
 
-<!-- <section id="events" class="container">
-  <h2 class="section-title">Upcoming Events</h2>
-
-  <div class="events-container">
-    <div class="event-card">
-      <img src="/api/placeholder/300/180" alt="Senior Dance Night" class="event-image">
-      <div class="event-details">
-        <h3 class="event-title">Senior Dance Night</h3>
-        <p class="event-date">May 20, 2025</p>
-        <p class="event-description">Join us for a night of dancing and socializing with fellow community members.
-        </p>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <section id="photos" class="container">
   <h2 class="section-title" data-lang="en">Photo Albums</h2>
   <h2 class="section-title" data-lang="es">Álbumes de Fotos</h2>
@@ -125,6 +109,23 @@ layout: "base.html"
         <h3 class="album-title" data-lang="en">Senior Holiday Festival 2024</h3>
         <h3 class="album-title" data-lang="es">Festival Navideño para Adultos Mayores 2024</h3>
       </a>
+    </div>
+  </div>
+</section>
+
+<section id="events" class="container">
+  <h2 class="section-title">Upcoming Events</h2>
+
+  <div class="events-container">
+    <div class="event-card">
+      <a href="/images/treat-a-thon-full.jpg">
+        <img src="/images/treat-a-thon-thumbnail.jpg" alt="Treat-a-Thon" class="event-image">
+      </a>
+      <div class="event-details">
+        <h3 class="event-title">Treat-a-Thon</h3>
+        <p class="event-date">Oct 24, 2025</p>
+        </p>
+      </div>
     </div>
   </div>
 </section>

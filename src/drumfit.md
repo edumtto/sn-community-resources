@@ -3,7 +3,7 @@ title: "Drumfit"
 layout: "base.html"
 ---
 
-<section class="hero-section" style="background-image: url('/images/drumfit-hero.jpg');">
+<section class="hero-section darkened" style="background-image: url('/images/drumfit-hero.jpg');">
   <div class="hero-content">
     <h1 data-lang="en">Drumfit Videos</h1>
     <h1 data-lang="es">Videos de Drumfit</h1>

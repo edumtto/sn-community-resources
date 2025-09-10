@@ -3,7 +3,7 @@ title: "Mahjong"
 layout: "base.html"
 ---
 
-<section class="hero-section" style="background-image: url('/images/mahjong-hero.jpg');">
+<section class="hero-section darkened" style="background-image: url('/images/mahjong-hero.jpg');">
   <div class="hero-content">
     <h1 data-lang="en">Discover the World of Mahjong</h1>
     <h1 data-lang="es">Descubre el Mundo del Mahjong</h1>
@@ -16,10 +16,9 @@ layout: "base.html"
   <h2 class="section-title" data-lang="en">About Mahjong</h2>
   <h2 class="section-title" data-lang="es">Acerca del Mahjong</h2>
 
-  <div class="resource-card" style="max-width: 800px; margin: 0 auto;">
+  <div class="text-container">
     <h3 class="resource-title" data-lang="en">What is Mahjong?</h3>
     <h3 class="resource-title" data-lang="es">¿Qué es el Mahjong?</h3>
-
     <p class="resource-description" data-lang="en">
       Mahjong is a traditional Chinese tile game that combines elements of skill, strategy, and chance.
       It's played with 144 tiles featuring Chinese characters and symbols. The game is popular worldwide
@@ -31,10 +30,8 @@ layout: "base.html"
       y es especialmente disfrutado por los adultos mayores, ya que ayuda a mantener la agudeza mental y
       proporciona interacción social.
     </p>
-
     <h3 class="resource-title" style="margin-top: 2rem;" data-lang="en">Benefits of Playing Mahjong</h3>
     <h3 class="resource-title" style="margin-top: 2rem;" data-lang="es">Beneficios de Jugar Mahjong</h3>
-
     <ul class="resource-description" style="list-style-type: none; padding-left: 0;">
       <li data-lang="en">• Improves memory and concentration</li>
       <li data-lang="es">• Mejora la memoria y la concentración</li>

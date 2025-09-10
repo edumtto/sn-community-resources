@@ -252,7 +252,7 @@ section:last-child {
   font-size: 1.8rem;
   margin-bottom: 2rem;
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   border-bottom: 2px solid var(--secondary);
 }
 
@@ -286,6 +286,7 @@ section:last-child {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .resource-card,
@@ -357,12 +358,13 @@ section:last-child {
 
 .event-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 20rem;
+  object-fit: contain;
 }
 
 .event-details {
-  padding: 1.5rem;
+  text-align: center;
+  padding: 1rem 0 0 0;
 }
 
 .event-date {
@@ -372,7 +374,7 @@ section:last-child {
   border-radius: var(--border-radius);
   display: inline-block;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 /* Contact Form */
@@ -436,6 +438,7 @@ section:last-child {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+  padding: 0 1rem
 }
 
 .album-image {
@@ -477,17 +480,6 @@ footer {
     --spacing-unit: 0.75rem;
   }
 
-  .header-top {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: left; */
-  }
-
-  .accessibility-controls {
-    /* display: none; */
-  }
-
-
   .text-size-controls {
     display: none;
   }
@@ -509,30 +501,26 @@ footer {
   .event-card,
   .photo-album {
     max-width: 100%;
-  }
+  } 
 
-  .form-input,
+  /* .form-input,
   .form-textarea,
   .form-button {
     font-size: 16px;
-    /* Prevent zoom on iOS */
-  }
-
-  section {
-    margin: 1rem 0;
-    padding: 1rem;
-  }
+    /* Prevent zoom on iOS
+  } 
+  */
 
   .section-title {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
   }
 
-  section:not(:last-child)::after {
+  /* section:not(:last-child)::after {
     bottom: -1rem;
     width: 40px;
     height: 3px;
-  }
+  } */
 
   .footer-links {
     gap: 0.5rem;

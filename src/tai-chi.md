@@ -3,7 +3,7 @@ title: "Tai-Chi"
 layout: "base.html"
 ---
 
-<section class="hero-section" style="background-image: url('/images/tai-chi-hero.jpg');">
+<section class="hero-section darkened" style="background-image: url('/images/tai-chi-hero.jpg');">
   <div class="hero-content">
     <h1 data-lang="en">Tai Chi Resources</h1>
     <h1 data-lang="es">Recursos de Tai Chi</h1>
