@@ -249,11 +249,9 @@ section:last-child {
 
 .section-title {
   color: var(--primary-dark);
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  padding-top: 2.5rem;
-  border-bottom: 2px solid var(--secondary);
+  font-size: 2rem;
+  padding: 3rem 1rem 1.5rem 1rem;
+  /* border-bottom: 2px solid var(--medium-gray); */
 }
 
 /* Resource Categories */
@@ -436,14 +434,14 @@ section:last-child {
 /* Photos Section */
 .photos-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   padding: 0 1rem
 }
 
 .album-image {
   width: 100%;
-  height: 200px;
+  height: 170px;
   object-fit: cover;
 }
 
@@ -512,8 +510,8 @@ footer {
   */
 
   .section-title {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
   }
 
   /* section:not(:last-child)::after {
