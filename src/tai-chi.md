@@ -15,7 +15,7 @@ layout: "base.html"
 <section class="featured-section">
   <div class="container">
     <div class="featured-card">
-      <a href="/images/tai-chi-class-2025.pdf" class="featured-image">
+      <a href="/documents/tai-chi-class-2025.pdf" class="featured-image">
         <img src="/images/tai-chi-featured.jpg" alt="Tai Chi Practice">
       </a>
       <div class="featured-content">
