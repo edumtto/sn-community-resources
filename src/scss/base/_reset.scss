@@ -1,0 +1,42 @@
+// ==========================================================================
+// Reset & Base Styles
+// ==========================================================================
+
+@use '../abstracts/variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+html {
+  font-size: $font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $light;
+  color: $dark;
+  line-height: $line-height-base;
+  font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Focus management
+:focus {
+  outline: 2px solid $primary;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+// Selection styles
+::selection {
+  background-color: $highlight;
+  color: $dark;
+}

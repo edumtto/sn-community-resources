@@ -1,0 +1,61 @@
+// ==========================================================================
+// Footer Layout
+// ==========================================================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+footer {
+  background-color: $primary-dark;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @include flex-center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-links {
+  @include flex-center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  
+  a {
+    color: $light-gray;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius;
+    transition: all 0.3s ease;
+    @include focus-visible;
+    
+    &:hover {
+      color: white;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    @include tablet {
+      font-size: 0.85rem;
+      padding: 0.2rem 0.4rem;
+    }
+  }
+  
+  @include tablet {
+    gap: 0.5rem;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  color: $light-gray;
+  
+  @include tablet {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,159 @@
+// ==========================================================================
+// Header Layout
+// ==========================================================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+  background-color: $primary-dark;
+  color: white;
+  padding: 0;
+  box-shadow: $shadow-md;
+  position: sticky;
+  top: 0;
+  z-index: $z-index-sticky;
+}
+
+.header-container {
+  padding: 8px 16px;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.header-top {
+  @include flex-between;
+  flex-wrap: wrap;
+  gap: $spacing-unit;
+}
+
+.header-logo-and-navigation {
+  @include flex-center;
+  gap: 2rem;
+}
+
+// Logo styles
+.logo {
+  font-size: 26px;
+  font-weight: 200;
+  color: $highlight;
+  letter-spacing: 0.01rem;
+  
+  @include mobile {
+    padding: 0 0.4rem;
+  }
+}
+
+.logo-compact {
+  display: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: $highlight;
+  line-height: normal;
+}
+
+// Accessibility controls
+.accessibility-controls {
+  @include flex-center;
+  gap: $spacing-unit;
+  align-items: flex-end;
+}
+
+.text-size-controls {
+  @include flex-center;
+  gap: 0.5rem;
+  
+  @include tablet {
+    display: none;
+  }
+}
+
+.text-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius;
+  cursor: pointer;
+  min-width: 2rem;
+  min-height: 32px;
+  font-size: 0.75rem;
+  transition: background-color 0.2s;
+  @include focus-visible;
+  
+  img {
+    width: 0.75rem;
+  }
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  @include tablet {
+    min-height: 32px;
+  }
+}
+
+// Language selector
+.language-selector {
+  @include flex-center;
+}
+
+.language-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius;
+  cursor: pointer;
+  min-height: 32px;
+  font-size: 0.75rem;
+  transition: background-color 0.2s;
+  @include focus-visible;
+  
+  img {
+    height: 1rem;
+  }
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  @include tablet {
+    min-height: 32px;
+    font-size: 0.8rem;
+  }
+}
+
+.language-btn-content {
+  @include flex-center;
+  gap: 0.2rem;
+}
+
+// Mobile menu button
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+  min-height: 3.5rem;
+  @include focus-visible;
+  
+  @include tablet {
+    display: block;
+  }
+}
+
+// Mobile responsive adjustments
+@include mobile {
+  .header-logo-and-navigation {
+    flex-direction: column;
+    gap: 0;
+    align-items: normal;
+  }
+}

@@ -1,0 +1,58 @@
+// ==========================================================================
+// Navigation Layout
+// ==========================================================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+nav {
+  @include flex-center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem;
+  border-radius: $border-radius;
+  font-size: 1rem;
+  @include flex-center;
+  transition: background-color 0.3s ease;
+  @include focus-visible;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  &:focus-visible {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+// Active navigation state
+.nav-item.active {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+// Mobile navigation
+@include tablet {
+  nav {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    
+    .nav-item {
+      width: 100%;
+      padding: 1rem;
+      text-align: left;
+      border-radius: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

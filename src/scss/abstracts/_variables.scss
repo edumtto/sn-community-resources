@@ -1,0 +1,62 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// Colors
+// --------------------------------------------------------------------------
+
+// Primary Colors - Soft Blue Theme
+$primary: #2B6CB0; // Deep, readable blue
+$primary-light: #4299E1; // Lighter blue for hover states
+$primary-dark: #1A4B8C; // Darker blue for text
+
+// Secondary Colors - Warm Accent
+$secondary: #E53E3E; // Warm red for important elements
+$secondary-light: #FC8181; // Light red for hover states
+$secondary-dark: #C53030; // Dark red for text
+
+// Neutral Colors
+$light: #F7FAFC; // Very light gray for backgrounds
+$light-gray: #dfe5ec; // Light gray for cards
+$medium-gray: #A0AEC0; // Medium gray for borders
+$dark: #2D3748; // Dark gray for text
+
+// Accent Colors
+$accent: #38A169; // Green for success/positive actions
+$accent-light: #48BB78; // Light green for hover states
+$accent-dark: #2F855A; // Dark green for text
+
+// Highlight Colors
+$highlight: #F6E05E; // Soft yellow for highlights
+$highlight-light: #FAF089; // Light yellow for hover states
+$highlight-dark: #D69E2E; // Dark yellow for text
+
+// Shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+// Spacing and Layout
+$spacing-unit: 1rem;
+$border-radius: 8px;
+$max-width: 1200px;
+
+// Typography
+$font-family: 'Inter', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 1200px;
+
+// Z-index scale
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;

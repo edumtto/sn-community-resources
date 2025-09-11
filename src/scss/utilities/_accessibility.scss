@@ -1,0 +1,195 @@
+// ==========================================================================
+// Accessibility Utilities
+// ==========================================================================
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Screen reader only content
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Skip link
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: $primary;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: $z-index-fixed;
+  border-radius: $border-radius;
+  
+  &:focus {
+    top: 6px;
+  }
+}
+
+// Focus management
+.focus-visible {
+  @include focus-visible;
+}
+
+// High contrast mode support
+@include high-contrast {
+  :root {
+    --primary: #0000FF;
+    --secondary: #FF0000;
+    --accent: #008000;
+    --light: #FFFFFF;
+    --dark: #000000;
+  }
+  
+  .text-btn,
+  .language-btn,
+  .nav-item,
+  .form-button,
+  .btn {
+    border: 2px solid white;
+  }
+  
+  .resource-card,
+  .event-card,
+  .photo-album,
+  .card {
+    border: 2px solid black;
+  }
+}
+
+// Reduced motion support
+@include reduced-motion {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+// Color contrast utilities
+.high-contrast {
+  color: $dark;
+  background-color: $light;
+  
+  a {
+    color: $primary-dark;
+    text-decoration: underline;
+  }
+}
+
+// Text size utilities
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+// Font weight utilities
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+// Line height utilities
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+// Spacing utilities
+.p-0 { padding: 0; }
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.p-5 { padding: 1.25rem; }
+.p-6 { padding: 1.5rem; }
+
+.m-0 { margin: 0; }
+.m-1 { margin: 0.25rem; }
+.m-2 { margin: 0.5rem; }
+.m-3 { margin: 0.75rem; }
+.m-4 { margin: 1rem; }
+.m-5 { margin: 1.25rem; }
+.m-6 { margin: 1.5rem; }
+
+// Display utilities
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.grid { display: grid; }
+.hidden { display: none; }
+
+// Text alignment utilities
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+// Color utilities
+.text-primary { color: $primary; }
+.text-secondary { color: $secondary; }
+.text-accent { color: $accent; }
+.text-dark { color: $dark; }
+.text-light { color: $light; }
+.text-white { color: white; }
+
+.bg-primary { background-color: $primary; }
+.bg-secondary { background-color: $secondary; }
+.bg-accent { background-color: $accent; }
+.bg-light { background-color: $light; }
+.bg-white { background-color: white; }

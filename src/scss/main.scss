@@ -1,0 +1,75 @@
+// ==========================================================================
+// Main SCSS File
+// ==========================================================================
+// This file imports all SCSS modules in the correct order using @use
+
+// 1. Abstracts (Variables, Mixins, Functions)
+// --------------------------------------------------------------------------
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/functions' as *;
+
+// 2. Base Styles (Reset, Typography, Base Elements)
+// --------------------------------------------------------------------------
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/base';
+
+// 3. Layout (Header, Navigation, Footer)
+// --------------------------------------------------------------------------
+@use 'layout/header';
+@use 'layout/navigation';
+@use 'layout/footer';
+
+// 4. Components (Buttons, Cards, Forms, Hero, Sections)
+// --------------------------------------------------------------------------
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
+@use 'components/hero';
+@use 'components/sections';
+
+// 5. Utilities (Responsive, Accessibility, Animations)
+// --------------------------------------------------------------------------
+@use 'utilities/responsive';
+@use 'utilities/accessibility';
+@use 'utilities/animations';
+
+// 6. Legacy CSS Variables (for backward compatibility)
+// --------------------------------------------------------------------------
+:root {
+  // Primary Colors - Soft Blue Theme
+  --primary: #{$primary};
+  --primary-light: #{$primary-light};
+  --primary-dark: #{$primary-dark};
+
+  // Secondary Colors - Warm Accent
+  --secondary: #{$secondary};
+  --secondary-light: #{$secondary-light};
+  --secondary-dark: #{$secondary-dark};
+
+  // Neutral Colors
+  --light: #{$light};
+  --light-gray: #{$light-gray};
+  --medium-gray: #{$medium-gray};
+  --dark: #{$dark};
+
+  // Accent Colors
+  --accent: #{$accent};
+  --accent-light: #{$accent-light};
+  --accent-dark: #{$accent-dark};
+
+  // Highlight Colors
+  --highlight: #{$highlight};
+  --highlight-light: #{$highlight-light};
+  --highlight-dark: #{$highlight-dark};
+
+  // Shadows
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+
+  // Spacing and Border Radius
+  --spacing-unit: #{$spacing-unit};
+  --border-radius: #{$border-radius};
+}
