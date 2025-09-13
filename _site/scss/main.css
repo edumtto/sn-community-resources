@@ -549,6 +549,7 @@ footer {
   color: white;
 }
 .btn-secondary:hover {
+  color: white;
   background-color: #48BB78;
 }
 
@@ -593,6 +594,7 @@ footer {
   color: white;
 }
 .resource-link:hover {
+  color: white;
   background-color: #48BB78;
 }
 .resource-link {
@@ -684,6 +686,7 @@ footer {
   color: white;
 }
 .video-link:hover {
+  color: white;
   background-color: #48BB78;
 }
 .video-link {
@@ -706,6 +709,7 @@ footer {
   color: white;
 }
 .form-button:hover {
+  color: white;
   background-color: #48BB78;
 }
 .form-button {
