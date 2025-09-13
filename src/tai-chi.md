@@ -85,9 +85,3 @@ layout: "base.html"
   </div>
 </section>
 </main>
-
-<div class="back-to-home-container">
-  <a href="/index.html" class="back-button" data-lang="en">← Back to Home Page</a>
-  <a href="/index.html" class="back-button" data-lang="es">← Volver a la Página Principal</a>
-</div>
-

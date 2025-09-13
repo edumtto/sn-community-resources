@@ -105,6 +105,7 @@
 }
 
 .featured-button:hover {
+  color: white;
   background-color: var(--primary-light);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);

@@ -89,33 +89,40 @@ h6 {
   font-size: 1rem;
 }
 
+/*
+// Paragraphs
 p {
   margin-bottom: 1rem;
-  line-height: 1.6;
+  line-height: $line-height-base;
 }
 
+// Links
 a {
-  color: #2B6CB0;
+  color: $primary;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-a:hover {
-  color: #4299E1;
-}
-a:focus-visible {
-  outline: 2px solid #2B6CB0;
-  outline-offset: 2px;
+
+  &:hover {
+    color: $primary-light;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
 }
 
+// Strong text with gradient effect
 strong {
   font-weight: 500;
-  color: #D69E2E;
-  background: linear-gradient(120deg, #D69E2E 1.1rem, #F6E05E 100%);
+  color: $highlight-dark;
+  background: linear-gradient(120deg, $highlight-dark 1.1rem, $highlight 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
+// Lists
 ul, ol {
   margin-bottom: 1rem;
   padding-left: 2rem;
@@ -125,26 +132,28 @@ li {
   margin-bottom: 0.5rem;
 }
 
+// Code
 code {
-  background-color: #dfe5ec;
+  background-color: $light-gray;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  font-family: "Courier New", monospace;
+  font-family: 'Courier New', monospace;
   font-size: 0.9em;
 }
 
 pre {
-  background-color: #dfe5ec;
+  background-color: $light-gray;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: $border-radius;
   overflow-x: auto;
   margin-bottom: 1rem;
-}
-pre code {
-  background: none;
-  padding: 0;
-}
 
+  code {
+    background: none;
+    padding: 0;
+  }
+}
+*/
 .container {
   width: 100%;
   max-width: 1200px;
@@ -531,6 +540,7 @@ footer {
   color: white;
 }
 .btn-primary:hover {
+  color: white;
   background-color: #4299E1;
 }
 
@@ -568,6 +578,7 @@ footer {
   color: white;
 }
 .category-btn:hover {
+  color: white;
   background-color: #4299E1;
 }
 .category-btn {
@@ -620,6 +631,7 @@ footer {
   color: white;
 }
 .featured-button:hover {
+  color: white;
   background-color: #4299E1;
 }
 .featured-button {
@@ -628,6 +640,7 @@ footer {
   align-self: flex-start;
 }
 .featured-button:hover {
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
@@ -647,6 +660,7 @@ footer {
   color: white;
 }
 .back-button:hover {
+  color: white;
   background-color: #4299E1;
 }
 .back-button {
