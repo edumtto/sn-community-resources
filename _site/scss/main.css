@@ -790,14 +790,13 @@ footer {
 }
 
 .event-card {
-  background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid #dfe5ec;
   transition: all 0.3s ease;
   padding: 1rem;
+  border: 2px solid #F7FAFC;
 }
 .event-card:hover {
+  border: 2px solid #dfe5ec;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
@@ -807,12 +806,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.event-title {
-  color: #1A4B8C;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
 }
 
 .event-image {
@@ -828,22 +821,19 @@ footer {
 
 .event-date {
   color: #E53E3E;
-  background-color: rgba(229, 62, 62, 0.1);
-  padding: 0.25rem 0.75rem;
-  border-radius: 8px;
   display: inline-block;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .photo-album {
-  background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid #dfe5ec;
   transition: all 0.3s ease;
   padding: 1rem;
+  border: 2px solid #F7FAFC;
 }
 .photo-album:hover {
+  border: 2px solid #dfe5ec;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
@@ -862,13 +852,13 @@ footer {
   width: 100%;
   height: 170px;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .album-title {
-  padding: 1rem;
+  padding-top: 1rem;
   text-align: center;
   font-size: 1.2rem;
-  background-color: white;
   text-decoration: none;
 }
 

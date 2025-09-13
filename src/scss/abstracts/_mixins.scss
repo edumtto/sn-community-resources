@@ -116,6 +116,19 @@
   }
 }
 
+@mixin card-transparent {
+  border-radius: $border-radius;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  border: 2px solid $light;
+  
+  &:hover {
+    border: 2px solid $light-gray;
+    box-shadow: $shadow-lg;
+    transform: translateY(-5px);
+  }
+}
+
 // Accessibility
 // --------------------------------------------------------------------------
 @mixin focus-visible {
