@@ -9,7 +9,7 @@
 .desktop-nav {
   @include flex-center;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 1.4rem;
   
   @include tablet {
     display: none;
@@ -29,8 +29,8 @@
 
 .mobile-nav {
   @include flex-center;
-  gap: 0.4rem;
-  padding: 0.5rem 0 0 0;
+  gap: 1.4rem;
+  padding: 1rem 0 0 0;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -55,43 +55,46 @@
     }
   }
   
-  .nav-item {
-    flex-shrink: 0;
-    padding: 0.5rem 0.8rem;
-    text-align: center;
-    border-radius: $border-radius;
-    border-bottom: none;
-    min-width: fit-content;
-    white-space: nowrap;
+  // .nav-item {
+  //   flex-shrink: 0;
+  //   padding: 0.5rem 0.8rem;
+  //   text-align: center;
+  //   border-radius: $border-radius;
+  //   border-bottom: none;
+  //   min-width: fit-content;
+  //   white-space: nowrap;
     
-    &:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-  }
+  //   &:hover {
+  //     background: rgba(255, 255, 255, 0.2);
+  //   }
+  // }
 }
 
 // Base navigation item styles
 .nav-item {
   color: white;
   text-decoration: none;
-  padding: 0.4rem;
-  border-radius: $border-radius;
+  padding-top: 4px;
+  // border-radius: $border-radius;
   font-size: 1rem;
   @include flex-center;
-  transition: background-color 0.3s ease;
+  position: relative;
+  transition: color 0.2s ease;
   @include focus-visible;
+  border-bottom: 4px solid transparent;
   
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    border-bottom-color: $accent;
   }
   
   &:focus-visible {
-    background: rgba(255, 255, 255, 0.2);
+    border-bottom-color: $accent;
   }
 }
 
 // Active navigation state
 .nav-item.active {
-  background: rgba(255, 255, 255, 0.2);
   font-weight: 500;
+  border-bottom-color: $accent;
 }
