@@ -257,6 +257,11 @@ header {
   color: #F6E05E;
   letter-spacing: 0.01rem;
 }
+.logo strong {
+  background: linear-gradient(120deg, var(--highlight-dark) 1.1rem, var(--highlight) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media (max-width: 480px) {
   .logo {
     padding: 0 0.4rem;
