@@ -42,6 +42,7 @@ header {
   strong {
     background: linear-gradient(120deg,var(--highlight-dark) 1.1rem, var(--highlight) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;  
   }
   
@@ -68,10 +69,6 @@ header {
 .text-size-controls {
   @include flex-center;
   gap: 0.5rem;
-  
-  @include tablet {
-    display: none;
-  }
 }
 
 .text-btn {
@@ -158,8 +155,11 @@ header {
 // Mobile responsive adjustments
 @include mobile {
   .header-logo-and-navigation {
-    flex-direction: column;
-    gap: 0;
-    align-items: normal;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .accessibility-controls {
+    align-items: center;
   }
 }

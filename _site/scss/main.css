@@ -263,6 +263,7 @@ header {
 .logo strong {
   background: linear-gradient(120deg, var(--highlight-dark) 1.1rem, var(--highlight) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 480px) {
@@ -292,11 +293,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-}
-@media (max-width: 768px) {
-  .text-size-controls {
-    display: none;
-  }
 }
 
 .text-btn {
@@ -392,17 +388,72 @@ header {
 
 @media (max-width: 480px) {
   .header-logo-and-navigation {
-    flex-direction: column;
-    gap: 0;
-    align-items: normal;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .accessibility-controls {
+    align-items: center;
   }
 }
-nav {
+.desktop-nav {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.4rem;
+}
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+.mobile-nav-container {
+  display: none;
+  background-color: #1A4B8C;
+}
+@media (max-width: 768px) {
+  .mobile-nav-container {
+    display: block;
+  }
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0 0 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+.mobile-nav::-webkit-scrollbar {
+  height: 4px;
+}
+.mobile-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+.mobile-nav::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+.mobile-nav::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.mobile-nav .nav-item {
+  flex-shrink: 0;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  border-radius: 8px;
+  border-bottom: none;
+  min-width: fit-content;
+  white-space: nowrap;
+}
+.mobile-nav .nav-item:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .nav-item {
@@ -432,23 +483,6 @@ nav {
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-  }
-  nav .nav-item {
-    width: 100%;
-    padding: 1rem;
-    text-align: left;
-    border-radius: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  nav .nav-item:last-child {
-    border-bottom: none;
-  }
-}
 footer {
   background-color: #1A4B8C;
   color: white;

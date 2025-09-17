@@ -5,12 +5,72 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-nav {
+// Desktop Navigation
+.desktop-nav {
   @include flex-center;
   flex-wrap: wrap;
   gap: 0.4rem;
+  
+  @include tablet {
+    display: none;
+  }
 }
 
+// Mobile/Tablet Navigation Container
+.mobile-nav-container {
+  display: none;
+  // border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: $primary-dark;
+  
+  @include tablet {
+    display: block;
+  }
+}
+
+.mobile-nav {
+  @include flex-center;
+  gap: 0.4rem;
+  padding: 0.5rem 0 0 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  
+  // Webkit scrollbar styling for better appearance
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  .nav-item {
+    flex-shrink: 0;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    border-radius: $border-radius;
+    border-bottom: none;
+    min-width: fit-content;
+    white-space: nowrap;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+// Base navigation item styles
 .nav-item {
   color: white;
   text-decoration: none;
@@ -34,25 +94,4 @@ nav {
 .nav-item.active {
   background: rgba(255, 255, 255, 0.2);
   font-weight: 500;
-}
-
-// Mobile navigation
-@include tablet {
-  nav {
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    
-    .nav-item {
-      width: 100%;
-      padding: 1rem;
-      text-align: left;
-      border-radius: 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-  }
 }
