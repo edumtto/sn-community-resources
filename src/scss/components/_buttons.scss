@@ -63,30 +63,6 @@
   }
 }
 
-// Back button
-.back-button {
-  @include button-primary;
-  font-size: 1.2rem;
-  font-weight: bold;
-  box-shadow: $shadow-md;
-  margin: 0 0.5rem;
-  white-space: nowrap;
-  min-width: 200px;
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: $shadow-lg;
-  }
-  
-  @include tablet {
-    font-size: 1.1rem;
-    padding: 0.6rem 1.2rem;
-    margin: 0.5rem;
-    display: inline-block;
-    width: auto;
-  }
-}
-
 // Video link button
 .video-link {
   @include button-secondary;

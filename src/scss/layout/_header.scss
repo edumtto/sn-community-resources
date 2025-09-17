@@ -38,6 +38,12 @@ header {
   font-weight: 200;
   color: $highlight;
   letter-spacing: 0.01rem;
+
+  strong {
+    background: linear-gradient(120deg,var(--highlight-dark) 1.1rem, var(--highlight) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  }
   
   @include mobile {
     padding: 0 0.4rem;

@@ -45,23 +45,6 @@
   margin-bottom: 1.5rem;
 }
 
-// Back to home container
-.back-to-home-container {
-  text-align: center;
-  padding: 2rem 0;
-  background-color: $light;
-  margin-top: 2rem;
-  @include flex-center;
-  min-width: 300px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  
-  @include tablet {
-    padding: 1.5rem 0;
-  }
-}
-
 // Text container
 .text-container {
   padding: 0 1rem;
