@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Natomas Gold - Photos</title>
+  <link rel="stylesheet" type="text/css" href="/scss/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="/js/script.js" async></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-top">
+        <div class="header-logo-and-navigation">
+          <a href="/index.html">
+            <h1 class="logo">SN<strong>Gold</strong></h1>
+          </a>
+          
+          <!-- <img class="logo" src="/images/logo.png"> -->
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+              <a href="/index.html" class="nav-item">Home</a>
+              <a href="/resources/index.html" class="nav-item" data-lang="en">Resources</a>
+              <a href="/resources/index.html" class="nav-item" data-lang="es">Recursos</a>
+              <a href="/photos/index.html" class="nav-item" data-lang="en">Photos</a>
+              <a href="/photos/index.html" class="nav-item" data-lang="es">Fotos</a>
+              <a href="/events/index.html" class="nav-item" data-lang="en">Events</a>
+              <a href="/events/index.html" class="nav-item" data-lang="es">Eventos</a> 
+              <!-- <a href="#about" class="nav-item" data-lang="en">About</a>
+              <a href="#about" class="nav-item" data-lang="es">Sobre</a> -->
+            </nav>
+        </div>
+        
+        <div class="accessibility-controls">
+          <div class="text-size-controls">
+            <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">
+              <img src="/images/zoom-out.png" />
+            </button>
+            <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">
+              <img src="/images/zoom-in.png" />
+            </button>
+          </div>
+          <div class="language-selector">
+            <button class="language-btn" data-lang="es" onclick="selectLanguage('en')"
+              aria-label="Switch to English">
+              <div class="language-btn-content">
+                <img src="/images/language.png"/> 
+                <span>EN</span>
+              </div>
+              
+            </button>
+            <button class="language-btn" data-lang="en" onclick="selectLanguage('es')"
+              aria-label="Switch to Spanish">
+              <div class="language-btn-content">
+                <img src="/images/language.png"/> 
+                <span>ES</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile/Tablet Navigation -->
+      <div class="mobile-nav-container">
+        <nav class="mobile-nav">
+          <a href="/index.html" class="nav-item">Home</a>
+          <a href="/resources/index.html" class="nav-item" data-lang="en">Resources</a>
+          <a href="/resources/index.html" class="nav-item" data-lang="es">Recursos</a>
+          <a href="/photos/index.html" class="nav-item" data-lang="en">Photos</a>
+          <a href="/photos/index.html" class="nav-item" data-lang="es">Fotos</a>
+          <a href="/events/index.html" class="nav-item" data-lang="en">Events</a>
+          <a href="/events/index.html" class="nav-item" data-lang="es">Eventos</a> 
+          <!-- <a href="#about" class="nav-item" data-lang="en">About</a>
+          <a href="#about" class="nav-item" data-lang="es">Sobre</a> -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <main>
+   <section id="photos" class="container">
+  <h2 class="section-title" data-lang="en">Photo Albums</h2>
+  <h2 class="section-title" data-lang="es">Álbumes de Fotos</h2>
+  <div class="photos-container">
+    <div class="photo-album">
+      <a href="https://photos.app.goo.gl/uziAgLxpY9ya6dAG8">
+        <img src="../images/senior-tea-party.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Senior Wonderland Tea Party</h3>
+        <h3 class="album-title" data-lang="es">Senior Wonderland Tea Party</h3>
+      </a>
+    </div>
+    <div class="photo-album">
+      <a href="https://photos.app.goo.gl/FKhS92nHfeCQYkCg8">
+        <img src="../images/senior_summer_showcase.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Senior Summer Showcase</h3>
+        <h3 class="album-title" data-lang="es">Senior Summer Showcase</h3>
+      </a>
+    </div>
+    <div class="photo-album">
+      <a href="https://photos.app.goo.gl/eUALnD3CitG4PpJa9">
+        <img src="../images/garden-setup-2025.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Vegetable Garden Setup 2025</h3>
+        <h3 class="album-title" data-lang="es">Preparación del huerto 2025</h3>
+      </a>
+    </div>
+    <div class="photo-album">
+      <a href="https://photos.app.goo.gl/jfPAJc9mRKNY27Lw8">
+        <img src="../images/yard-sale-2025.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Yard Sale 2025</h3>
+        <h3 class="album-title" data-lang="es">Venta de Garaje 2025</h3>
+      </a>
+    </div>
+    <div class="photo-album">
+      <a href="https://photos.app.goo.gl/N2MjFe343LMR8N2J6">
+        <img src="../images/flower_power-fest-2025.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Senior Power Flower Fest 2025</h3>
+        <h3 class="album-title" data-lang="es">Festival de Flores para Adultos Mayores 2025</h3>
+      </a>
+    </div>
+    <div class="photo-album">
+      <a href="https://photos.app.goo.gl/tFS3Yx1KMbFmVFrH8">
+        <img src="../images/mahjong_tournament-2025.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Mahjong Tournament 2025</h3>
+        <h3 class="album-title" data-lang="es">Torneo de Mahjong 2025</h3>
+      </a>
+    </div>
+    <div class="photo-album">
+      <a href="https://photos.app.goo.gl/bvfEA3QmnWEveJ5VA">
+        <img src="../images/zumba_gold_2025.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Zumba Gold Classes 2025</h3>
+        <h3 class="album-title" data-lang="es">Clases de Zumba Gold 2025</h3>
+      </a>
+    </div>
+    <div class="photo-album">
+      <a href="https://photos.app.goo.gl/YVUvcPe3W7BQkXYM6">
+        <img src="../images/senior_holiday_festival_2025.jpg" alt="Album image" class="album-image">
+        <h3 class="album-title" data-lang="en">Senior Holiday Festival 2024</h3>
+        <h3 class="album-title" data-lang="es">Festival Navideño para Adultos Mayores 2024</h3>
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        <p>&copy; 2025 South Natomas Gold. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

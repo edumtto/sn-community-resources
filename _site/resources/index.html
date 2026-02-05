@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Natomas Gold - Resources</title>
+  <link rel="stylesheet" type="text/css" href="/scss/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="/js/script.js" async></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-top">
+        <div class="header-logo-and-navigation">
+          <a href="/index.html">
+            <h1 class="logo">SN<strong>Gold</strong></h1>
+          </a>
+          
+          <!-- <img class="logo" src="/images/logo.png"> -->
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+              <a href="/index.html" class="nav-item">Home</a>
+              <a href="/resources/index.html" class="nav-item" data-lang="en">Resources</a>
+              <a href="/resources/index.html" class="nav-item" data-lang="es">Recursos</a>
+              <a href="/photos/index.html" class="nav-item" data-lang="en">Photos</a>
+              <a href="/photos/index.html" class="nav-item" data-lang="es">Fotos</a>
+              <a href="/events/index.html" class="nav-item" data-lang="en">Events</a>
+              <a href="/events/index.html" class="nav-item" data-lang="es">Eventos</a> 
+              <!-- <a href="#about" class="nav-item" data-lang="en">About</a>
+              <a href="#about" class="nav-item" data-lang="es">Sobre</a> -->
+            </nav>
+        </div>
+        
+        <div class="accessibility-controls">
+          <div class="text-size-controls">
+            <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">
+              <img src="/images/zoom-out.png" />
+            </button>
+            <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">
+              <img src="/images/zoom-in.png" />
+            </button>
+          </div>
+          <div class="language-selector">
+            <button class="language-btn" data-lang="es" onclick="selectLanguage('en')"
+              aria-label="Switch to English">
+              <div class="language-btn-content">
+                <img src="/images/language.png"/> 
+                <span>EN</span>
+              </div>
+              
+            </button>
+            <button class="language-btn" data-lang="en" onclick="selectLanguage('es')"
+              aria-label="Switch to Spanish">
+              <div class="language-btn-content">
+                <img src="/images/language.png"/> 
+                <span>ES</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile/Tablet Navigation -->
+      <div class="mobile-nav-container">
+        <nav class="mobile-nav">
+          <a href="/index.html" class="nav-item">Home</a>
+          <a href="/resources/index.html" class="nav-item" data-lang="en">Resources</a>
+          <a href="/resources/index.html" class="nav-item" data-lang="es">Recursos</a>
+          <a href="/photos/index.html" class="nav-item" data-lang="en">Photos</a>
+          <a href="/photos/index.html" class="nav-item" data-lang="es">Fotos</a>
+          <a href="/events/index.html" class="nav-item" data-lang="en">Events</a>
+          <a href="/events/index.html" class="nav-item" data-lang="es">Eventos</a> 
+          <!-- <a href="#about" class="nav-item" data-lang="en">About</a>
+          <a href="#about" class="nav-item" data-lang="es">Sobre</a> -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <main>
+   <section id="resources" class="container">
+  <h2 class="section-title" data-lang="en">Resources</h2>
+  <h2 class="section-title" data-lang="es">Recursos</h2>
+  <div class="resources-container">
+    <!-- Tai Chi Resources -->
+    <div class="resource-card" data-category="exercise">
+      <h3 class="resource-title" data-lang="en">☀️ Tai Chi Resources</h3>
+      <h3 class="resource-title" data-lang="es">☀️ Recursos de Tai Chi</h3>
+      <p class="resource-description" data-lang="en">Discover the benefits of Tai Chi and learn how to practice it.
+      </p>
+      <p class="resource-description" data-lang="es">Descubra los beneficios del Tai Chi y aprenda cómo practicarlo.
+      </p>
+      <a href="/tai-chi/index.html" class="resource-link" data-lang="en">View Resources</a>
+      <a href="/tai-chi/index.html" class="resource-link" data-lang="es">Ver Recursos</a>
+    </div>
+    <!-- Drumfit Resources -->
+    <div class="resource-card" data-category="exercise videos">
+      <h3 class="resource-title" data-lang="en">🥁 Drumfit Videos</h3>
+      <h3 class="resource-title" data-lang="es">🥁 Videos de Drumfit</h3>
+      <p class="resource-description" data-lang="en">Enjoy rhythmic exercise videos created by Eddie and Carla.</p>
+      <p class="resource-description" data-lang="es">Disfrute de videos de ejercicio rítmico creados por Eddie y
+        Carla.</p>
+      <a href="/drumfit/index.html" class="resource-link" data-lang="en">Watch Videos</a>
+      <a href="/drumfit/index.html" class="resource-link" data-lang="es">Ver Videos</a>
+    </div>
+    <!-- Mahjong Resources -->
+    <div class="resource-card" data-category="games">
+      <h3 class="resource-title" data-lang="en">🀄 Mahjong Materials</h3>
+      <h3 class="resource-title" data-lang="es">🀄 Materiales de Mahjong</h3>
+      <p class="resource-description" data-lang="en">Learn how to play Mahjong with our tutorials and guides.</p>
+      <p class="resource-description" data-lang="es">Aprenda a jugar Mahjong con nuestros tutoriales y guías.</p>
+      <a href="/mahjong/index.html" class="resource-link" data-lang="en">View Tutorials</a>
+      <a href="/mahjong/index.html" class="resource-link" data-lang="es">Ver Tutoriales</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        <p>&copy; 2025 South Natomas Gold. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

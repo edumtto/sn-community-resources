@@ -30,7 +30,7 @@ section {
 .section-title {
   color: $primary-dark;
   font-size: 2rem;
-  padding: 3rem 1rem 1.5rem 1rem;
+  padding: 3rem 1rem 0rem 1rem;
   
   @include tablet {
     text-align: center;

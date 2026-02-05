@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Natomas Gold - Welcome</title>
+  <link rel="stylesheet" type="text/css" href="/scss/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="/js/script.js" async></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-top">
+        <div class="header-logo-and-navigation">
+          <a href="/index.html">
+            <h1 class="logo">SN<strong>Gold</strong></h1>
+          </a>
+          
+          <!-- <img class="logo" src="/images/logo.png"> -->
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+              <a href="/index.html" class="nav-item">Home</a>
+              <a href="/resources/index.html" class="nav-item" data-lang="en">Resources</a>
+              <a href="/resources/index.html" class="nav-item" data-lang="es">Recursos</a>
+              <a href="/photos/index.html" class="nav-item" data-lang="en">Photos</a>
+              <a href="/photos/index.html" class="nav-item" data-lang="es">Fotos</a>
+              <a href="/events/index.html" class="nav-item" data-lang="en">Events</a>
+              <a href="/events/index.html" class="nav-item" data-lang="es">Eventos</a> 
+              <!-- <a href="#about" class="nav-item" data-lang="en">About</a>
+              <a href="#about" class="nav-item" data-lang="es">Sobre</a> -->
+            </nav>
+        </div>
+        
+        <div class="accessibility-controls">
+          <div class="text-size-controls">
+            <button class="text-btn" onclick="changeTextSize('decrease')" aria-label="Decrease text size">
+              <img src="/images/zoom-out.png" />
+            </button>
+            <button class="text-btn" onclick="changeTextSize('increase')" aria-label="Increase text size">
+              <img src="/images/zoom-in.png" />
+            </button>
+          </div>
+          <div class="language-selector">
+            <button class="language-btn" data-lang="es" onclick="selectLanguage('en')"
+              aria-label="Switch to English">
+              <div class="language-btn-content">
+                <img src="/images/language.png"/> 
+                <span>EN</span>
+              </div>
+              
+            </button>
+            <button class="language-btn" data-lang="en" onclick="selectLanguage('es')"
+              aria-label="Switch to Spanish">
+              <div class="language-btn-content">
+                <img src="/images/language.png"/> 
+                <span>ES</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile/Tablet Navigation -->
+      <div class="mobile-nav-container">
+        <nav class="mobile-nav">
+          <a href="/index.html" class="nav-item">Home</a>
+          <a href="/resources/index.html" class="nav-item" data-lang="en">Resources</a>
+          <a href="/resources/index.html" class="nav-item" data-lang="es">Recursos</a>
+          <a href="/photos/index.html" class="nav-item" data-lang="en">Photos</a>
+          <a href="/photos/index.html" class="nav-item" data-lang="es">Fotos</a>
+          <a href="/events/index.html" class="nav-item" data-lang="en">Events</a>
+          <a href="/events/index.html" class="nav-item" data-lang="es">Eventos</a> 
+          <!-- <a href="#about" class="nav-item" data-lang="en">About</a>
+          <a href="#about" class="nav-item" data-lang="es">Sobre</a> -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <main>
+   <section id="events" class="container">
+  <h2 class="section-title">Upcoming Events</h2>
+  <div class="events-container">
+    <div class="event-card">
+      <a href="/images/treat-a-thon-full.jpg">
+        <img src="/images/treat-a-thon-thumbnail.jpg" alt="Treat-a-Thon" class="event-image">
+      </a>
+      <div class="event-details">
+        <h3 class="event-title">Treat-a-Thon</h3>
+        <p class="event-date">Oct 24, 2025</p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        <p>&copy; 2025 South Natomas Gold. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
