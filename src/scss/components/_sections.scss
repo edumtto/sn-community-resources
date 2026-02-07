@@ -1,29 +1,9 @@
-// ==========================================================================
-// Section Components
-// ==========================================================================
-
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-// Featured section
 .featured-section {
   padding-top: 2rem;
   background-color: $light;
-}
-
-// Benefits section
-.benefits-section {
-  border-radius: $border-radius;
-  
-  h2 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-}
-
-// Video categories section
-.video-categories {
-  // Base styles for video categories
 }
 
 .category-section {
@@ -37,59 +17,9 @@
   }
 }
 
-// Resource categories
 .resource-categories {
   @include flex-center;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-}
-
-// Text container
-.text-container {
-  padding: 0 1rem;
-}
-
-// Section spacing utilities
-.section-spacing {
-  &--small {
-    padding: 1rem 0;
-  }
-  
-  &--medium {
-    padding: 2rem 0;
-  }
-  
-  &--large {
-    padding: 4rem 0;
-  }
-}
-
-// Section background variants
-.section-bg {
-  &--light {
-    background-color: $light;
-  }
-  
-  &--white {
-    background-color: white;
-  }
-  
-  &--primary {
-    background-color: $primary;
-    color: white;
-    
-    h1, h2, h3, h4, h5, h6 {
-      color: white;
-    }
-  }
-  
-  &--secondary {
-    background-color: $secondary;
-    color: white;
-    
-    h1, h2, h3, h4, h5, h6 {
-      color: white;
-    }
-  }
 }

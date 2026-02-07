@@ -1,61 +1,35 @@
-// ==========================================================================
-// Button Components
-// ==========================================================================
-
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-// Base button styles
 .btn {
   @include button-base;
   @include focus-visible;
-  @include reduced-motion;
-  
   &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
 }
 
-// Primary button
-.btn-primary {
-  @include button-primary;
+.btn-primary, .category-btn, .resource-link, .featured-button, .video-link, .form-button {
+  @include button-base;
 }
 
-// Secondary button
-.btn-secondary {
-  @include button-secondary;
-}
-
-// Category button
 .category-btn {
-  @include button-primary;
   border: 1px solid $primary-dark;
-  font-size: 1.1rem;
-  min-height: 3rem;
-  
-  &.active {
-    background-color: $primary-light;
-  }
+  &.active { background-color: $primary-light; }
 }
 
-// Resource link button
-.resource-link {
-  @include button-secondary;
+.resource-link, .video-link {
   display: flex;
   align-items: center;
   justify-content: center;
   align-self: flex-end;
-  font-size: 1.1rem;
 }
 
-// Featured button
 .featured-button {
-  @include button-primary;
   font-size: 1.2rem;
   box-shadow: $shadow-md;
   align-self: flex-start;
-  
   &:hover {
     color: white;
     transform: translateY(-2px);
@@ -63,53 +37,13 @@
   }
 }
 
-// Video link button
 .video-link {
-  @include button-secondary;
   margin-top: auto;
-  align-self: flex-end;
 }
 
-// Form button
 .form-button {
-  @include button-secondary;
   width: 100%;
   max-width: 250px;
   margin: 1rem auto 0;
   display: block;
-}
-
-// Button sizes
-.btn-sm {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  min-height: 2.5rem;
-}
-
-.btn-lg {
-  padding: 1rem 2rem;
-  font-size: 1.3rem;
-  min-height: 3.5rem;
-}
-
-// Button variants
-.btn-outline {
-  background: transparent;
-  border: 2px solid $primary;
-  color: $primary;
-  
-  &:hover {
-    background-color: $primary;
-    color: white;
-  }
-}
-
-.btn-ghost {
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  color: white;
-  
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
 }

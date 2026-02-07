@@ -33,3 +33,25 @@ layout: "base.html"
     I'm a local software developer with a background in building native iOS and web applications. After leading projects for social platforms and fintechs, I wanted to apply those skills closer to home. South Natomas Gold was born from a desire to create a clean, modern space for my neighbors to find high-quality information without the clutter of traditional social media.
   </p>
 </section>
+
+
+<!-- # South Natomas Gold
+
+Connecting the 50+ community
+
+
+Welcome to your independent hub for life in South Natomas, Sacramento. We are dedicated to our vibrant adult community, offering a central space to stay active, informed, and connected.
+
+
+- 📷 **See Your Neighborhood:** Browse community-contributed photos.
+- 🌳 **Stay Active:** Find local exercise spots and walking trails.
+- 📚 **Keep Learning:** Discover workshops and educational resources.
+- 📆 **Get Involved:** View a calendar of upcoming public events.
+
+
+*Note: South Natomas Gold is an independent resource and is not affiliated with the City of Sacramento.*
+
+
+## About the Editor
+
+I'm a local software developer with a background in building native iOS and web applications. After leading projects for social platforms and fintechs, I wanted to apply those skills closer to home. South Natomas Gold was born from a desire to create a clean, modern space for my neighbors to find high-quality information without the clutter of traditional social media. -->

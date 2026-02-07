@@ -1,17 +1,10 @@
-// ==========================================================================
-// Card Components
-// ==========================================================================
-
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-// Base card styles
 .card {
   @include card-base;
-  @include reduced-motion;
 }
 
-// Resource card
 .resource-card {
   @include card-base;
   max-width: 600px;
@@ -31,7 +24,6 @@
   font-size: 1.1rem;
 }
 
-// Event card
 .event-card {
   @include card-transparent;
   max-width: 600px;
@@ -58,17 +50,13 @@
   margin-bottom: 0;
 }
 
-// Photo album card
 .photo-album {
   @include card-transparent;
   max-width: 600px;
   margin: 0 auto;
   @include flex-column;
   justify-content: space-between;
-  
-  a {
-    color: $accent;
-  }
+  a { color: $accent; }
 }
 
 .album-image {
@@ -85,28 +73,22 @@
   text-decoration: none;
 }
 
-// Featured card
 .featured-card {
   @include card-base;
   @include flex-center;
   overflow: hidden;
   margin: 0 1rem;
-  
-  @include tablet {
-    flex-direction: column;
-  }
+  @include tablet { flex-direction: column; }
 }
 
 .featured-image {
   flex: 0 0 40%;
   min-width: 300px;
-  
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
   @include tablet {
     flex: 0 0 200px;
     min-width: 100%;
@@ -118,15 +100,13 @@
   padding: 2rem;
   @include flex-column;
   justify-content: center;
+  @include tablet { padding: 1.5rem; }
   
   h2 {
     color: $primary-dark;
     font-size: 2rem;
     margin-bottom: 1rem;
-    
-    @include tablet {
-      font-size: 1.5rem;
-    }
+    @include tablet { font-size: 1.5rem; }
   }
   
   p {
@@ -134,18 +114,10 @@
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
-    
-    @include tablet {
-      font-size: 1rem;
-    }
-  }
-  
-  @include tablet {
-    padding: 1.5rem;
+    @include tablet { font-size: 1rem; }
   }
 }
 
-// Video card
 .video-card {
   @include card-base;
   overflow: hidden;
@@ -154,8 +126,7 @@
 
 .video-thumbnail {
   position: relative;
-  padding-top: 56.25%; // 16:9 Aspect Ratio
-  
+  padding-top: 56.25%;
   img {
     position: absolute;
     top: 0;
@@ -183,7 +154,6 @@
   }
 }
 
-// Benefit card
 .benefit-card {
   padding: 2.5rem;
   border-radius: $border-radius;
@@ -220,9 +190,7 @@
   }
 }
 
-// Card containers
-.resources-container,
-.events-container {
+.resources-container, .events-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -241,10 +209,7 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   padding: 0 1rem;
-  
-  @include tablet {
-    grid-template-columns: 1fr;
-  }
+  @include tablet { grid-template-columns: 1fr; }
 }
 
 .benefits-grid {
@@ -254,11 +219,8 @@
   margin-top: 2rem;
 }
 
-// Mobile adjustments
 @include tablet {
-  .resource-card,
-  .event-card,
-  .photo-album {
+  .resource-card, .event-card, .photo-album {
     max-width: 100%;
   }
 }
